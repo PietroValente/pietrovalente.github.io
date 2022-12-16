@@ -1,7 +1,9 @@
-.adj1{
-  margin-top: -25%;
+/*Responsive corrections*/
+@media only screen and (orientation: portrait){
+  .adj1{
+    margin-top: -25%;
+  }
+  .adj2{
+    margin-bottom: 17%;
+  } 
 }
-
-.adj2{
-  margin-bottom: 17%;
-} 
