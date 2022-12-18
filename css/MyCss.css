@@ -1,4 +1,10 @@
 /*Responsive corrections*/
+@media only screen and (orientation: landscape){
+  .adj4{
+    width: 10%;
+  }
+}
+
 @media only screen and (orientation: portrait){
   .adj1{
     margin-top: -25%;
@@ -6,4 +12,12 @@
   .adj2{
     margin-bottom: 10%;
   } 
+  .adj3{
+    display: flex;
+    justify-content: space-between;
+  }
+  .adj4{
+    margin-left: 5%;
+    width: 20%;
+  }
 }
