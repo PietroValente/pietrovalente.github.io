@@ -3,6 +3,13 @@
   .adj4{
     width: 10%;
   }
+  .firstelement{
+    top: -7%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 3%; 
+    padding-bottom: 1.5%;
+  }
 }
 
 @media only screen and (orientation: portrait){
@@ -20,4 +27,16 @@
     margin-left: 5%;
     width: 20%;
   }
+  .firstelement{
+    top: -4%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 4%; 
+    padding-bottom: 1.5%;
+  }
+}
+
+.stack-top{
+  z-index: 9;
+  margin: 20px; /* for demo purpose  */
 }
