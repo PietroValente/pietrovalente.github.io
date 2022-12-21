@@ -52,18 +52,18 @@
     padding-bottom: 1.5%;
   }
   .centralelement{
-    top: -2%; 
+    top: -1%; 
     left: -33px; 
     background-color: white; 
     padding-top: 2%; 
     padding-bottom: 2%;
   }
   .finalelement{
-    top: -2%; 
+    top: -1%; 
     left: -33px; 
     background-color: white; 
     padding-top: 2%; 
-    padding-bottom: 75%;
+    padding-bottom: 165px;
   }
   .educationPc{
     display: none;
