@@ -4,11 +4,28 @@
     width: 10%;
   }
   .firstelement{
-    top: -7%; 
+    top: -8%; 
     left: -33px; 
     background-color: white; 
     padding-top: 3%; 
     padding-bottom: 1.5%;
+  }
+  .centralelement{
+    top: -5%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 2%;
+  }
+  .finalelement{
+    top: -5%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 52%;
+  }
+  .educationMobile{
+    display: none;
   }
 }
 
@@ -33,6 +50,23 @@
     background-color: white; 
     padding-top: 4%; 
     padding-bottom: 1.5%;
+  }
+  .centralelement{
+    top: -2%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 2%;
+  }
+  .finalelement{
+    top: -2%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 75%;
+  }
+  .educationPc{
+    display: none;
   }
 }
 
