@@ -27,6 +27,10 @@
         }
     });
 
+    // Navbar close on selectiong an item
+    $('.navbar-collapse a').click(function() {
+        $(".navbar-collapse").collapse('hide');
+      });
 
     // Typed Initiate
     if ($('.typed-text-output').length == 1) {
@@ -112,6 +116,8 @@
         loop: true,
         items: 1
     });
+
+    document.getElementById('startPortfolio').click();
     
 })(jQuery);
 
