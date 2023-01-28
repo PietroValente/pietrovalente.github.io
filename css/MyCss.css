@@ -3,21 +3,43 @@
   .adj4{
     width: 10%;
   }
-  .firstelement{
+  .firstelementS{
+    top: -4%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 3%; 
+    padding-bottom: 1.5%;
+  }
+  .centralelementS{
+    top: -2%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 2%;
+  }
+  .finalelementS{
+    top: -5%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 30%;
+  }
+
+  .firstelementE{
     top: -8%; 
     left: -33px; 
     background-color: white; 
     padding-top: 3%; 
     padding-bottom: 1.5%;
   }
-  .centralelement{
+  .centralelementE{
     top: -5%; 
     left: -33px; 
     background-color: white; 
     padding-top: 2%; 
     padding-bottom: 2%;
   }
-  .finalelement{
+  .finalelementE{
     top: -5%; 
     left: -33px; 
     background-color: white; 
@@ -44,21 +66,43 @@
     margin-left: 5%;
     width: 20%;
   }
-  .firstelement{
+  .firstelementS{
+    top: -2%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 6%; 
+    padding-bottom: 1.5%;
+  }
+  .centralelementS{
+    top: 0%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 2%;
+  }
+  .finalelementS{
+    top: -1%; 
+    left: -33px; 
+    background-color: white; 
+    padding-top: 2%; 
+    padding-bottom: 85%;
+  }
+
+  .firstelementE{
     top: -4%; 
     left: -33px; 
     background-color: white; 
     padding-top: 4%; 
     padding-bottom: 1.5%;
   }
-  .centralelement{
+  .centralelementE{
     top: -1%; 
     left: -33px; 
     background-color: white; 
     padding-top: 2%; 
     padding-bottom: 2%;
   }
-  .finalelement{
+  .finalelementE{
     top: -1%; 
     left: -33px; 
     background-color: white; 
