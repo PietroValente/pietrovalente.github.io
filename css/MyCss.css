@@ -71,20 +71,20 @@
     left: -34px; 
     background-color: white; 
     padding-top: 6%; 
-    padding-bottom: 1.5%;
+    padding-bottom: 6%;
   }
   .centralelementS{
-    top: 0%; 
+    top: -1.5%; 
     left: -33px; 
     background-color: white; 
-    padding-top: 2%; 
-    padding-bottom: 2%;
+    padding-top: 4%; 
+    padding-bottom: 4%;
   }
   .finalelementS{
-    top: -1%; 
+    top: -5%; 
     left: -34px; 
     background-color: white; 
-    padding-top: 2%; 
+    padding-top: 4%; 
     padding-bottom: 85%;
   }
 
