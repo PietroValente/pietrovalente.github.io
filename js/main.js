@@ -1,6 +1,10 @@
 (function ($) {
     "use strict";
 
+    	// Scroll animation init
+	window.sr = new scrollReveal();
+    
+
     // Navbar on scrolling
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
@@ -10,6 +14,16 @@
         }
     });
 
+    // Page loading animation
+	$(window).on('load', function() {
+		$("#preloader").animate({
+			'opacity': '0'
+		}, 1000, function(){
+			setTimeout(function(){
+				$("#preloader").css("visibility", "hidden").fadeOut();
+			}, 300);
+		});
+	});
 
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
