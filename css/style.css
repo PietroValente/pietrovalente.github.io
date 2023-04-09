@@ -9970,15 +9970,16 @@ h6,
 
 .blog-date {
   position: absolute;
-  width: 60px;
+  width: 130px;
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  left: calc(50% - 65px);
   border-radius: 60px;
+  opacity: 0.85;
   background: #3A486D;
 }
 
