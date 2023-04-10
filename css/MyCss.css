@@ -3,6 +3,12 @@
   .adj4{
     width: 10%;
   }
+  .adj5{
+    text-align: center !important;
+  }
+  .adj6{
+    justify-content: center !important;
+  }
   .firstelement{
     top: -25px; 
     left: -33px; 
@@ -43,6 +49,9 @@
   .adj4{
     margin-left: 5%;
     width: 20%;
+  }
+  .adj5{
+    text-align: left !important;
   }
   .firstelement{
     top: -20px; 
