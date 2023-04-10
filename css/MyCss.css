@@ -72,6 +72,9 @@
     font-weight: 100%;
     line-height: 100%;
   }
+  .card-body{
+    height: 220px;
+  }
 }
 
 /* Add animation to "home page content" */
