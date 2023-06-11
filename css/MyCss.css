@@ -28,7 +28,6 @@
     left: -33px; 
     background-color: white; 
     padding-top: 15px; 
-    padding-bottom: 170px;
   }
   .displayMobile{
     display: none;
@@ -78,7 +77,7 @@
     left: -33px; 
     background-color: white; 
     padding-top: 15px; 
-    padding-bottom: 375px;
+    padding-bottom: 70px;
   }
   .displayPc{
     display: none;

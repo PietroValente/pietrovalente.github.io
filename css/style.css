@@ -446,7 +446,7 @@ h6, .h6 {
 }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -6360,7 +6360,7 @@ a.close.disabled {
 }
 
 .bg-grey {
-  background-color: #3a486d80 !important;
+  background-color: #9ca3b5 !important;
 }
 
 .bg-primary {
