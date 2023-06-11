@@ -33,6 +33,15 @@
   .displayMobile{
     display: none;
   }
+  .card-body{
+    height: 180px;
+  }
+  .panel-heading  a {
+    pointer-events: none;
+  }
+  .panel-collapse{
+    display: inline-block !important;
+  }
 }
 
 @media only screen and (orientation: portrait){
@@ -78,9 +87,30 @@
     font-weight: 100%;
     line-height: 100%;
   }
-  .card-body{
-    height: 235px;
+
+  .panel-heading  a:before {
+    font-family: 'Glyphicons Halflings';
+    content: '\203A';
+    font-weight: bold;
+    font-size: 20px;
+    float: right;
+    opacity: 0.8;
+    transition: all 0.5s;
   }
+  .panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(90deg);
+  }
+}
+
+/* Panel description for mobile collapse*/
+.panel-heading {
+  padding-right: 15px;
+}
+.panel-heading>a, .panel-heading>a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Add animation to "home page content" */
