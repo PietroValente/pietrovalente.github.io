@@ -39,9 +39,9 @@
 
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-        <div class="adj3">
+        <div class="mobile-toolbar">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <img class="adj4" src="img/icon.png">
+                <img class="logo-dimension" src="img/icon.png">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -66,19 +66,17 @@
     <!-- Navbar End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <div class="header-min container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <div class="adj2">
                         <img class="animate-bottom img-fluid w-100 rounded-circle shadow-sm" src="img/profile.png"
                             alt="">
-                    </div>
                 </div>
                 <div class="animate-bottom col-lg-7 text-center text-lg-left">
-                    <h1 class="display-3 text-primary mb-2" style="font-family: Serif;"><span style="color:white">Pietro
-                            Valente</span></h1>
-                    <hr style="width:100%;text-align:left;margin-left:0; background-color:white; opacity: 0.3;">
+                    <h1 class="text-serif display-3 text-white mb-2">Pietro
+                            Valente</h1>
+                    <hr class="hr-style bg-white">
                     <br>
                     <h4 class="typed-text-output d-inline font-weight-lighter text-white"></h4>
                     <div class="typed-text d-none"></div>
@@ -91,16 +89,16 @@
     <!-- About Start -->
     <div class="container-fluid pb-5" id="about">
         <div class="container">
-            <h1 class="display-3 text-primary" style="font-family: Serif;">About</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#3A486D; opacity: 0.3; margin-top: -5px;">
+            <h1 class="display-3 text-primary text-serif">About</h1>
+            <hr class="hr-style bg-primary">
             <br>
-            <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+            <div class="row align-items-center" data-scroll-reveal="enter bottom move 50px over 0.6s">
+                <div class="displayPc col-lg-4 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-75" src="img/about.jpg" alt="">
                 </div>
-                <div class="col-lg-7" data-scroll-reveal="enter bottom move 50px over 0.6s">
-                    <h3 class="mb-4">ICT engineering student</h3>
+
+                <div class="col-lg-8" data-scroll-reveal="enter bottom move 50px over 0.6s">
+                    <h3 class="mb-4">ICT Engineering Student</h3>
                     <p>Nasco a Brescia, dove passo la mia infanzia e adolescenza. Il mio spirito avventuriero mi porta a
                         proseguire i miei studi fuoricasa, andando in due delle università migliori di Italia (by Sito),
                         Bachelor in Padova(5°) e Master in Milano (1°).
@@ -117,39 +115,38 @@
                                 class="fa-brands fa-github"></i></a>
                         <a class="btn btn-outline-primary btn-social" href="https://www.instagram.com/st.sooty"><i
                                 class="fab fa-instagram"></i></a>
-                    </div>
-                    <br>
+                    </div><br>
                     <div class="row mb-3">
                         <div class="col-sm-6 py-2">
                             <i class=" fa-solid fa-user-tie text-primary position-absolute"></i>
-                            <h6 style="padding-left: 10%;"><strong style="color:#3A486D">Name: </strong><span
+                            <h6 class="pl-5 text-primary"><strong>Name: </strong><span
                                     class="text-secondary">Pietro Valente</span></h6>
                         </div>
                         <div class="col-sm-6 py-2">
                             <i class=" fa-solid fa-cake-candles text-primary position-absolute"></i>
-                            <h6 style="padding-left: 10%;"><strong style="color:#3A486D">Birthday: </strong><span
+                            <h6 class="pl-5 text-primary"><strong>Birthday: </strong><span
                                     class="text-secondary">11 May 1999</span>
                             </h6>
                         </div>
                         <div class="col-sm-6 py-2">
-                            <i class=" fa-solid fa-envelope text-primary position-absolute"></i>
-                            <h6 style="padding-left: 10%;"><strong style="color:#3A486D">Email: </strong><span
-                                    class="text-secondary">pietro.valente@yahoo.com</span></h6>
-                        </div>
-                        <div class="col-sm-6 py-2">
                             <i class=" fa-solid fa-user-graduate text-primary position-absolute"></i>
-                            <h6 style="padding-left: 10%;"><strong style="color:#3A486D">Degree: </strong><span
+                            <h6 class="pl-5 text-primary"><strong>Degree: </strong><span
                                     class="text-secondary">Bachelor</span></h6>
                         </div>
                         <div class="col-sm-6 py-2">
                             <i class=" fa-solid fa-briefcase text-primary position-absolute"></i>
-                            <h6 style="padding-left: 10%;"><strong style="color:#3A486D">Experience: </strong><span
+                            <h6 class="pl-5 text-primary"><strong>Experience: </strong><span
                                     class="text-secondary">Junior</span></h6>
                         </div>
                         <div class="col-sm-6 py-2">
                             <i class=" fa-solid fa-location-dot text-primary position-absolute"></i>
-                            <h6 style="padding-left: 10%;"><strong style="color:#3A486D">City: </strong><span
+                            <h6 class="pl-5 text-primary"><strong>City: </strong><span
                                     class="text-secondary">Milan, Italy</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <i class=" fa-solid fa-file text-primary position-absolute"></i>
+                            <h6 class="pl-5 text-primary "><strong>Short CV: </strong><a
+                                    class="text-underline" target="_blank" href="www.prova">View</a></h6>
                         </div>
                     </div>
                 </div>
@@ -159,77 +156,79 @@
     <!-- About End -->
 
     <!-- Skill Start -->
-    <div class="container-fluid pt-5 pb-5" id="skill" style="background-color: #9ca3b5;">
+    <div class="container-fluid pt-5 pb-5 bg-grey" id="skill">
         <div class="container">
-            <h1 class="display-3 text-white" style="font-family: Serif;">Skills</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#fff; opacity: 0.7; margin-top: -5px;">
+            <h1 class="display-3 text-white text-serif">Skills</h1>
+            <hr class="hr-style bg-white">
             <br>
             <div class="row pb-3" data-scroll-reveal="enter bottom move 50px over 0.6s">
-                <div class="adj5 col-lg-4 col-md-6 mb-5">
-                    <div class="adj6 d-flex align-items-center mb-4">
-                        <i class="fa-solid fa-tower-broadcast service-icon bg-primary text-white mr-3"
-                            style="font-size: 160%;"></i>
-                        <h4 class="font-weight-bold m-0 text-uppercase text-primary">ICT Engineering</h4>
+                <div class="mini-box col-lg-4 col-md-6 mb-3">
+                    <div class="skill-card-title align-items-center">
+                        <i class="fa-solid fa-tower-broadcast service-icon mr-3 skill-card-icon"></i>
+                        <h4 class="font-weight-bold m-0 text-uppercase text-primary text-center">ICT Engineering</h4>
                     </div>
-                    <p style="color:#ededed">As an ICT engineer, I possess hands-on experience with <b
-                            style="color:#3A486D">network protocols</b> and have a particular
-                        focus on <b style="color:#3A486D">internet</b> protocols and <b
-                            style="color:#3A486D">security</b> measures. My thesis work on <b
-                            style="color:#3A486D">5G</b> has further developed my
+                    <p class="skill-card-body">As an ICT engineer, I possess hands-on experience with <b
+                            class="text-primary">network protocols</b> and have a particular
+                        focus on <b class="text-primary">internet</b> protocols and <b
+                        class="text-primary">security</b> measures. My thesis work on <b
+                        class="text-primary">5G</b> has further developed my
                         expertise in this area.</p>
                 </div>
-                <div class="adj5 col-lg-4 col-md-6 mb-5">
-                    <div class="adj6 d-flex align-items-center mb-4">
-                        <i class="fa-solid fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0 text-uppercase text-primary">Software Engineering</h4>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="skill-card-title align-items-center">
+                        <i class="fa-solid fa-2x fa-code service-icon mr-3 skill-card-icon"></i>
+                        <h4 class="font-weight-bold m-0 text-uppercase text-primary text-center">Software Engineering
+                        </h4>
                     </div>
-                    <p style="color:#ededed">I have extensive software engineering skills ranging from <b
-                            style="color:#3A486D">Android app</b> development to complex
-                        systems incorporating <b style="color:#3A486D">databases</b> and <b
-                            style="color:#3A486D">machine learning</b>. I also excel at analyzing system
-                        <b style="color:#3A486D">performance</b> and <b style="color:#3A486D">optimizing</b> computer
+                    <p class="skill-card-body">I have extensive software engineering skills ranging from <b
+                        class="text-primary">Android app</b> development to complex
+                        systems incorporating <b class="text-primary">databases</b> and <b
+                        class="text-primary">machine learning</b>. I also excel at analyzing system
+                        <b class="text-primary">performance</b> and <b class="text-primary">optimizing</b> computer
                         systems.
                     </p>
                 </div>
-                <div class="adj5 col-lg-4 col-md-6 mb-5">
-                    <div class="adj6 d-flex align-items-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0 text-uppercase text-primary">Full Stack Development</h4>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="skill-card-title align-items-center">
+                        <i class="fa fa-2x fa-laptop-code service-icon mr-3 skill-card-icon"></i>
+                        <h4 class="font-weight-bold m-0 text-uppercase text-primary text-center">Full Stack Development
+                        </h4>
                     </div>
-                    <p style="color:#ededed">As a Full Stack Developer, I have advanced database management skills using
+                    <p class="skill-card-body">As a Full Stack Developer, I have advanced database management skills
+                        using
                         Java EE/GO for
-                        <b style="color:#3A486D">backend</b> development, and a solid understanding of HTML, CSS,
+                        <b class="text-primary">backend</b> development, and a solid understanding of HTML, CSS,
                         JavaScript, and Bootstrap for
-                        <b style="color:#3A486D">frontend</b> development.
+                        <b class="text-primary">frontend</b> development.
                     </p>
                 </div>
-                <div class="adj5 col-lg-4 col-md-6 mb-5">
-                    <div class="adj6 d-flex align-items-center mb-4">
-                        <i class="fa-solid fa-chart-simple service-icon bg-primary text-white mr-3"
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="skill-card-title align-items-center">
+                        <i class="fa-solid fa-chart-simple service-icon mr-3 skill-card-icon"
                             style="font-size: 160%;"></i>
-                        <h4 class="font-weight-bold m-0 text-uppercase text-primary">Strategic Thinking</h4>
+                        <h4 class="font-weight-bold m-0 text-uppercase text-primary text-center">Strategic Thinking</h4>
                     </div>
-                    <p style="color:#ededed">You might have gained expertise in strategic thinking by studying courses
+                    <p class="skill-card-body">You might have gained expertise in strategic thinking by studying courses
                         related to strategy and
                         marketing. This skill is highly valued in the business world, as it enables you to identify
                         opportunities and threats, make informed decisions, and develop long-term plans.</p>
                 </div>
-                <div class="adj5 col-lg-4 col-md-6 mb-5">
-                    <div class="adj6 d-flex align-items-center mb-4">
-                        <i class="fa-solid fa-2x fa-calculator service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0 text-uppercase text-primary">Financial management</h4>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="skill-card-title align-items-center">
+                        <i class="fa-solid fa-2x fa-calculator service-icon mr-3 skill-card-icon"></i>
+                        <h4 class="font-weight-bold m-0 text-uppercase text-primary text-center">Financial management
+                        </h4>
                     </div>
-                    <p style="color:#ededed">With knowledge of financial management, you can effectively manage an
+                    <p class="skill-card-body">With knowledge of financial management, you can effectively manage an
                         organization's finances,
                         create financial reports, and use accounting software.</p>
                 </div>
-                <div class="adj5 col-lg-4 col-md-6 mb-5">
-                    <div class="adj6 d-flex align-items-center mb-4">
-                        <i class="fa-solid fa-2x fa-arrow-rotate-right service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0 text-uppercase text-primary">Agile innovation</h4>
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card-title align-items-center">
+                        <i class="fa-solid fa-2x fa-arrow-rotate-right service-icon mr-3 skill-card-icon"></i>
+                        <h4 class="font-weight-bold m-0 text-uppercase text-primary text-center">Agile innovation</h4>
                     </div>
-                    <p style="color:#ededed">This is another skill that is highly sought after in the job market. With
+                    <p class="skill-card-body">This is another skill that is highly sought after in the job market. With
                         an agile mindset, you
                         can develop new products and services quickly and efficiently, adapting to changes in the market
                         and responding to customer needs in real-time.</p>
@@ -240,184 +239,57 @@
     <!-- Skill End -->
 
     <!--  Start Research -->
-    <div class="container-fluid pt-5 pb-5" id="research">
+    <div class="container-fluid d-flex pt-5 pb-5" id="research">
         <div class="container">
-            <h1 class="display-3 text-primary" style="font-family: Serif;">Research</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#3A486D; opacity: 0.3; margin-top: -5px;">
-            <p class="text-center" style="padding:20px">This section is dedicated to my <b
-                    style="color:#3A486D">research</b> work in <b style="color:#3A486D">mobile technology</b>,
-                specifically related to Bachelor and Master theses.</p>
-            <div class="row align-items-center panel-group" id="accordion" role="tablist" aria-multiselectable="true"
-                data-scroll-reveal="enter bottom move 50px over 0.6s">
-                <div class="col-lg-6">
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="panel panel-default position-relative mb-4">
-                            <div class="panel-heading active" role="tab" id="heading1">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1"
-                                    aria-expanded="true" aria-controls="collapse1">
-                                    <i
-                                        class="firstelement fa-solid fa-tower-broadcast text-primary position-absolute"></i>
-                                    <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">ICT/Software
-                                            Engineer</strong></h5>
-                                    <p class="mb-2"><strong>Rai x RayWay x PoliMi</strong><br class="displayMobile"> |
-                                        <small>Oct 2022 - in
-                                            progress</small>
-                                    </p>
-                                </a>
-                            </div>
-                            <div id="collapse1" class="panel-collapse collapse show" role="tabpanel"
-                                aria-labelledby="heading1">
-                                <p>IMPORTANTE: PROGETTO MINISTERIALE Tempor eos dolore amet tempor dolor tempor. Dolore
-                                    ea
-                                    magna sit amet dolor eirmod. Eos
-                                    ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit
-                                    ipsum
-                                    stet lorem diam</p>
-                                <div style="text-align: center;">
-                                    <a type="button" style="border: 0.1px solid #3A486D; color:#3A486D;"
-                                        class="btn btn-light"
-                                        href="https://www.coursera.org/account/accomplishments/certificate/B5NNPDQXNXTK"><i
-                                            class="fa-solid fa-link"></i> Show credential</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default position-relative mb-4">
-                            <div class="panel-heading" role="tab" id="heading2">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    <i
-                                        class="centralelement fa-solid fa-laptop-code text-primary position-absolute"></i>
-                                    <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Back-end
-                                            contributor</strong></h5>
-                                    <p class="mb-2"><strong>PoliScuola - HOC-LAB</strong><br class="displayMobile"> |
-                                        <small>Feb
-                                            2022 - Jun 2022</small>
-                                    </p>
-                                </a>
-                            </div>
-                            <div id="collapse2" class="panel-collapse collapse" role="tabpanel"
-                                aria-labelledby="heading2">
-                                <p>I contributed, with my team, to the creation of a new multimedia storytelling
-                                    platform
-                                    for a project aimed at promoting cultural education in schools. We worked to develop
-                                    and
-                                    improve the platform's features and functionality, helping students and teachers to
-                                    create engaging and effective multimedia narratives on a variety of subjects. The
-                                    project was a great opportunity to combine my technical skills with my passion for
-                                    sharing and promoting cultural understanding.</p>
-                                <div style="text-align: center;">
-                                    <a type="button" style="border: 0.1px solid #3A486D; color:#3A486D;"
-                                        class="btn btn-light"
-                                        href="https://www.coursera.org/account/accomplishments/certificate/B5NNPDQXNXTK"><i
-                                            class="fa-solid fa-link"></i> Show credential</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="displayMobile">
-                            <div class="panel panel-default position-relative mb-4">
-                                <div class="panel-heading" role="tab" id="heading3">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                        <i
-                                            class="centralelement fa-solid fa-pizza-slice text-primary position-absolute"></i>
-                                        <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Room Service
-                                                Waiter</strong></h5>
-                                        <p class="mb-2"><strong>Rossopomodoro UK</strong><br class="displayMobile"> |
-                                            <small>Sep
-                                                2019 - Sep 2019</small>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel"
-                                    aria-labelledby="heading3">
-                                    <p>I worked in a restaurant to gain new work experience and improve my English. It
-                                        was a
-                                        great opportunity to work in the hospitality industry and learn more about the
-                                        restaurant business. Being immersed in an English-speaking environment allowed
-                                        me to
-                                        improve my language skills and I enjoyed interacting with customers and having
-                                        the
-                                        chance to share my Italian culture with them.</p>
-                                    <div style="text-align: center;">
-                                        <a type="button" style="border: 0.1px solid #3A486D; color:#3A486D;"
-                                            class="btn btn-light"
-                                            href="https://www.coursera.org/account/accomplishments/certificate/B5NNPDQXNXTK"><i
-                                                class="fa-solid fa-link"></i> Show credential</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default position-relative mb-4">
-                                <div class="panel-heading" role="tab" id="heading4">
-                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                        <i class="finalelement fa-solid fa-gift text-primary position-absolute"></i>
-                                        <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Store
-                                                assistant</strong>
-                                        </h5>
-                                        <p class="mb-2"><strong>Città del sole</strong><br class="displayMobile"> |
-                                            <small>Dec
-                                                2015 - Dec 2015</small>
-                                        </p>
-                                    </a>
-                                </div>
-                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel"
-                                    aria-labelledby="heading4"
-                                    style="padding-left: 33px;margin-left: -33px;top: 0; background-color:white">
-                                    <p>I went to work as a sales assistant during the Christmas period, helping
-                                        customers
-                                        with their purchases and also assisting with gift wrapping. It was a great
-                                        opportunity to assist customers in finding the perfect gifts for their loved
-                                        ones.
-                                    </p>
-                                    <div style="text-align: center;">
-                                        <a type="button" style="border: 0.1px solid #3A486D; color:#3A486D;"
-                                            class="btn btn-light"
-                                            href="https://www.coursera.org/account/accomplishments/certificate/B5NNPDQXNXTK"><i
-                                                class="fa-solid fa-link"></i> Show credential</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <h1 class="display-3 text-primary text-serif">Research</h1>
+            <hr class="hr-style bg-primary">
+            <br class="displayPc">
+            <!--<p class="text-center" style="padding:20px">This section is dedicated to my <b
+                    class="text-primary">research</b> work in <b class="text-primary">mobile technology</b>,
+                specifically related to Bachelor and Master theses.</p>-->
+            <div class="row align-items-center">
+
+                <div class="col-lg-8" data-scroll-reveal="enter bottom move 50px over 0.6s">
+                    <h5 class="font-weight-bold mb-4 mt-4 text-center text-secondary">Efficient delivery of
+                        audiovisual content to mobile devices <br>combining 5G Broadcast and CDN technologies</h5>
+                    <p>IMPORTANTE: PROGETTO MINISTERIALE Tempor eos dolore amet tempor dolor tempor. Dolore
+                        ea
+                        magna sit amet dolor eirmod. Eos
+                        ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit
+                        ipsum
+                        stet lorem diam</p>
+                    <small><strong class="text-primary">Paper</strong> pubblication: 11 June 2023 | <a
+                            class="text-underline" target="_blank" href="www.google.com">Read
+                            more</a></small>
+
+                    <hr class="hr-style bg-primary">
+
+                    <h5 class="font-weight-bold mb-4 mt-4 text-center text-secondary">5G Broadcast</h5>
+                    <p>IMPORTANTE: PROGETTO MINISTERIALE Tempor eos dolore amet tempor dolor tempor. Dolore
+                        ea
+                        magna sit amet dolor eirmod. Eos
+                        ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit
+                        ipsum
+                        stet lorem diam</p>
+                    <small><strong class="text-primary">Master thesis</strong> pubblication: soon! | <a
+                            class="text-underline" target="_blank" href="www.google.com">Read
+                            more</a></small>
+                    <hr class="hr-style bg-primary">
+                    <h5 class="font-weight-bold mt-4 text-center text-secondary">Spoofing GPS</h5>
+                    <p>IMPORTANTE: PROGETTO MINISTERIALE Tempor eos dolore amet tempor dolor tempor. Dolore
+                        ea
+                        magna sit amet dolor eirmod. Eos
+                        ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit
+                        ipsum
+                        stet lorem diam</p>
+                    <small><strong class="text-primary">Bachelor thesis</strong> pubblication: Sep 2021 | <a
+                            class="text-underline" target="_blank"
+                            href="https://drive.google.com/file/d/1m7ROASbFyg6G1aNs5N1KeD6jJ9zuUsQ0/view?usp=sharing">Read
+                            more</a></small>
                 </div>
-                <div class="displayPc col-lg-6">
-                    <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="firstelement fa-solid fa-pizza-slice text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Room Service Waiter</strong>
-                            </h5>
-                            <p class="mb-2"><strong>Rossopomodoro UK</strong> | <small>Sep 2019 - Sep 2019</small></p>
-                            <p>I worked in a restaurant to gain new work experience and improve my English. It was a
-                                great opportunity to work in the hospitality industry and learn more about the
-                                restaurant business. Being immersed in an English-speaking environment allowed me to
-                                improve my language skills and I enjoyed interacting with customers and having the
-                                chance to share my Italian culture with them.</p>
-                            <div style="text-align: center;">
-                                <a type="button" style="border: 0.1px solid #3A486D; color:#3A486D;"
-                                    class="btn btn-light"
-                                    href="https://www.coursera.org/account/accomplishments/certificate/B5NNPDQXNXTK"><i
-                                        class="fa-solid fa-link"></i> Show credential</a>
-                            </div>
-                        </div>
-                        <div class="position-relative mb-4"
-                            style="padding-left: 33px;margin-left: -33px;top: 0; background-color:white">
-                            <i class="finalelement fa-solid fa-gift text-primary position-absolute"
-                                style="margin-left: 33px"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Store assistant</strong>
-                            </h5>
-                            <p class="mb-2"><strong>Città del sole</strong> | <small>Dec 2015 - Dec 2015</small></p>
-                            <p>I went to work as a sales assistant during the Christmas period, helping customers with
-                                their purchases and also assisting with gift wrapping. It was a great opportunity to
-                                assist customers in finding the perfect gifts for their loved ones.</p>
-                            <div style="text-align: center;">
-                                <a type="button" style="border: 0.1px solid #3A486D; color:#3A486D;"
-                                    class="btn btn-light"
-                                    href="https://www.coursera.org/account/accomplishments/certificate/B5NNPDQXNXTK"><i
-                                        class="fa-solid fa-link"></i> Show credential</a>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="displayPc col-lg-4 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-75" src="img/antenna.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -425,25 +297,24 @@
     <!-- Research End -->
 
     <!--  Start Expericence -->
-    <div class="container-fluid pt-5 pb-5" id="expericence" style="background-color: #9ca3b5;">
+    <div class="container-fluid pt-5 pb-5" id="experience">
         <div class="container">
-            <h1 class="display-3 text-white" style="font-family: Serif;">Expericence</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#fff; opacity: 0.7; margin-top: -5px;">
+            <h1 class="display-3 text-primary text-serif">Experience</h1>
+            <hr class="hr-style bg-primary">
             <br>
-            <div class="row align-items-center panel-group" data-scroll-reveal="enter bottom move 50px over 0.6s">
+            <div class="row align-items-center panel-group" id="accordion" role="tablist" aria-multiselectable="true"
+                data-scroll-reveal="enter bottom move 50px over 0.6s">
                 <div class="col-lg-6">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="panel panel-default position-relative mb-4">
                             <div class="panel-heading active" role="tab" id="heading5">
                                 <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5"
-                                    aria-expanded="true" aria-controls="collapse5" style="color: white;">
+                                    aria-expanded="true" aria-controls="collapse5">
                                     <i
-                                        class="firstelement fa-solid fa-tower-broadcast bg-grey text-primary position-absolute"></i>
-                                    <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">ICT/Software
+                                        class="firstelement-icon fa-solid fa-tower-broadcast text-primary position-absolute"></i>
+                                    <h5 class="font-weight-bold mb-1"><strong class="text-primary">ICT/Software
                                             Engineer</strong></h5>
-                                    <p class="mb-2" style="color:#ededed"><strong>Rai x RayWay x PoliMi</strong><br
-                                            class="displayMobile"> |
+                                    <p class="mb-2"><strong>Rai x RayWay x PoliMi</strong><br class="displayMobile"> |
                                         <small>Oct 2022 - in
                                             progress</small>
                                     </p>
@@ -451,7 +322,7 @@
                             </div>
                             <div id="collapse5" class="panel-collapse collapse show" role="tabpanel"
                                 aria-labelledby="heading5">
-                                <p style="color:#ededed">IMPORTANTE: PROGETTO MINISTERIALE Tempor eos dolore amet tempor
+                                <p>IMPORTANTE: PROGETTO MINISTERIALE Tempor eos dolore amet tempor
                                     dolor tempor. Dolore ea
                                     magna sit amet dolor eirmod. Eos
                                     ipsum est tempor dolor. Clita lorem kasd sed ea lorem diam ea lorem eirmod duo sit
@@ -462,21 +333,20 @@
                         <div class="panel panel-default position-relative mb-4">
                             <div class="panel-heading" role="tab" id="heading6">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapse6" aria-expanded="false" aria-controls="collapse6"
-                                    style="color:white">
+                                    href="#collapse6" aria-expanded="false" aria-controls="collapse6">
                                     <i
-                                        class="centralelement fa-solid fa-laptop-code bg-grey text-primary position-absolute"></i>
-                                    <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Back-end
+                                        class="centralelement-icon fa-solid fa-laptop-code text-primary position-absolute"></i>
+                                    <h5 class="font-weight-bold mb-1"><strong class="text-primary">Back-end
                                             contributor</strong></h5>
-                                    <p class="mb-2" style="color:#ededed"><strong>PoliScuola - HOC-LAB</strong><br
-                                            class="displayMobile"> | <small>Feb
+                                    <p class="mb-2"><strong>PoliScuola - HOC-LAB</strong><br class="displayMobile"> |
+                                        <small>Feb
                                             2022 - Jun 2022</small>
                                     </p>
                                 </a>
                             </div>
                             <div id="collapse6" class="panel-collapse collapse" role="tabpanel"
                                 aria-labelledby="heading6">
-                                <p style="color:#ededed">I contributed, with my team, to the creation of a new
+                                <p>I contributed, with my team, to the creation of a new
                                     multimedia
                                     storytelling platform
                                     for a project aimed at promoting cultural education in schools. We worked to develop
@@ -490,21 +360,18 @@
                         <div class="panel panel-default position-relative mb-4">
                             <div class="panel-heading" role="tab" id="heading7">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                    href="#collapse7" aria-expanded="false" aria-controls="collapse7"
-                                    style="color:white">
-                                    <i
-                                        class="centralelement fa-solid fa-camera bg-grey text-primary position-absolute"></i>
+                                    href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                    <i class="centralelement-icon fa-solid fa-camera text-primary position-absolute"></i>
                                     <h5 class="font-weight-bold mb-1"><strong
-                                            style="color:#3A486D">Photographer</strong></h5>
-                                    <p class="mb-2" style="color:#ededed"><strong>Fishmarket</strong><br
-                                            class="displayMobile">
+                                            class="text-primary">Photographer</strong></h5>
+                                    <p class="mb-2"><strong>Fishmarket</strong><br class="displayMobile">
                                         | <small>Oct 2019 -
                                             Jan 2020</small></p>
                                 </a>
                             </div>
                             <div id="collapse7" class="panel-collapse collapse" role="tabpanel"
                                 aria-labelledby="heading7">
-                                <p style="color:#ededed">I worked as a photographer for the Paduan Wednesday nights at a
+                                <p>I worked as a photographer for the Paduan Wednesday nights at a
                                     disco. It was a great
                                     opportunity to practice my photography skills and capture the lively atmosphere of
                                     the
@@ -516,21 +383,20 @@
                             <div class="panel panel-default position-relative mb-4">
                                 <div class="panel-heading" role="tab" id="heading8">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapse8" aria-expanded="false" aria-controls="collapse8"
-                                        style="color:white">
+                                        href="#collapse8" aria-expanded="false" aria-controls="collapse8">
                                         <i
-                                            class="centralelement fa-solid fa-pizza-slice bg-grey text-primary position-absolute"></i>
-                                        <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Room Service
+                                            class="centralelement-icon fa-solid fa-pizza-slice text-primary position-absolute"></i>
+                                        <h5 class="font-weight-bold mb-1"><strong class="text-primary">Room Service
                                                 Waiter</strong></h5>
-                                        <p class="mb-2" style="color:#ededed"><strong>Rossopomodoro UK</strong><br
-                                                class="displayMobile"> | <small>Sep
+                                        <p class="mb-2"><strong>Rossopomodoro UK</strong><br class="displayMobile"> |
+                                            <small>Sep
                                                 2019 - Sep 2019</small>
                                         </p>
                                     </a>
                                 </div>
                                 <div id="collapse8" class="panel-collapse collapse" role="tabpanel"
                                     aria-labelledby="heading8">
-                                    <p style="color:#ededed">I worked in a restaurant to gain new work experience and
+                                    <p>I worked in a restaurant to gain new work experience and
                                         improve my English. It was a
                                         great opportunity to work in the hospitality industry and learn more about the
                                         restaurant business. Being immersed in an English-speaking environment allowed
@@ -543,20 +409,18 @@
                             <div class="panel panel-default position-relative mb-4">
                                 <div class="panel-heading" role="tab" id="heading9">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapse9" aria-expanded="false" aria-controls="collapse9"
-                                        style="color:white">
-                                        <i
-                                            class="centralelement fa-solid fa-laptop bg-grey text-primary position-absolute"></i>
-                                        <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Casual
+                                        href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        <i class="centralelement-icon fa-solid fa-laptop text-primary position-absolute"></i>
+                                        <h5 class="font-weight-bold mb-1"><strong class="text-primary">Casual
                                                 collaborator</strong></h5>
-                                        <p class="mb-2" style="color:#ededed"><strong>Kiki Lab</strong><br
-                                                class="displayMobile"> | <small>Jun 2014 -
+                                        <p class="mb-2"><strong>Kiki Lab</strong><br class="displayMobile"> | <small>Jun
+                                                2014 -
                                                 Sep 2016</small></p>
                                     </a>
                                 </div>
                                 <div id="collapse9" class="panel-collapse collapse" role="tabpanel"
                                     aria-labelledby="heading9">
-                                    <p style="color:#ededed">During the summer and occasionally, I had the opportunity
+                                    <p>During the summer and occasionally, I had the opportunity
                                         to
                                         support on basic IT
                                         issues and assist with the preparation of documents using PowerPoint and Excel.
@@ -567,25 +431,24 @@
                                         field and help others in the process.</p>
                                 </div>
                             </div>
-                            <div class="panel panel-default position-relative mb-4"
-                                style="padding-left: 33px;margin-left: -33px;top: 0; background-color:#9ca3b5">
+                            <div class="panel panel-default position-relative mb-4 finalelement-card"
+                                style="padding-left: 33px;margin-left: -33px;top: 0; background-color:#fff">
                                 <div class="panel-heading" role="tab" id="heading10">
                                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
-                                        href="#collapse10" aria-expanded="false" aria-controls="collapse10"
-                                        style="color:white">
-                                        <i class="finalelement fa-solid fa-gift bg-grey text-primary position-absolute"
+                                        href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        <i class="finalelement-icon fa-solid fa-gift text-primary position-absolute"
                                             style="margin-left: 33px;"></i>
-                                        <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Store
+                                        <h5 class="font-weight-bold mb-1"><strong class="text-primary">Store
                                                 assistant</strong>
                                         </h5>
-                                        <p class="mb-2" style="color:#ededed"><strong>Città del sole</strong><br
-                                                class="displayMobile"> | <small>Dec
+                                        <p class="mb-2"><strong>Città del sole</strong><br class="displayMobile"> |
+                                            <small>Dec
                                                 2015 - Dec 2015</small></p>
                                     </a>
                                 </div>
                                 <div id="collapse10" class="panel-collapse collapse" role="tabpanel"
                                     aria-labelledby="heading10">
-                                    <p style="color:#ededed">I went to work as a sales assistant during the Christmas
+                                    <p>I went to work as a sales assistant during the Christmas
                                         period, helping customers
                                         with their purchases and also assisting with gift wrapping. It was a great
                                         opportunity to assist customers in finding the perfect gifts for their loved
@@ -599,12 +462,12 @@
                 <div class="displayPc col-lg-6">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="firstelement fa-solid fa-pizza-slice bg-grey text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Room Service Waiter</strong>
+                            <i class="firstelement-icon fa-solid fa-pizza-slice text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Room Service Waiter</strong>
                             </h5>
-                            <p class="mb-2" style="color:#ededed"><strong>Rossopomodoro UK</strong> | <small>Sep 2019 -
+                            <p class="mb-2"><strong>Rossopomodoro UK</strong> | <small>Sep 2019 -
                                     Sep 2019</small></p>
-                            <p style="color:#ededed">I worked in a restaurant to gain new work experience and improve my
+                            <p>I worked in a restaurant to gain new work experience and improve my
                                 English. It was a
                                 great opportunity to work in the hospitality industry and learn more about the
                                 restaurant business. Being immersed in an English-speaking environment allowed me to
@@ -612,27 +475,25 @@
                                 chance to share my Italian culture with them.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-laptop bg-grey text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Casual collaborator</strong>
+                            <i class="centralelement-icon fa-solid fa-laptop text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Casual collaborator</strong>
                             </h5>
-                            <p class="mb-2" style="color:#ededed"><strong>Kiki Lab</strong> | <small>Jun 2014 - Sep
+                            <p class="mb-2"><strong>Kiki Lab</strong> | <small>Jun 2014 - Sep
                                     2016</small></p>
-                            <p style="color:#ededed">During the summer and occasionally, I had the opportunity to
+                            <p>During the summer and occasionally, I had the opportunity to
                                 support on basic IT issues
                                 and assist with the preparation of documents using PowerPoint and Excel. I enjoyed
                                 learning more about these tools and helping others with their technical needs. It was a
                                 great experience that allowed me to develop my skills in a different field and help
                                 others in the process.</p>
                         </div>
-                        <div class="position-relative mb-4"
-                            style="padding-left: 33px;margin-left: -33px;top: 0; background-color:#9ca3b5">
-                            <i class="finalelement fa-solid fa-gift bg-grey text-primary position-absolute"
-                                style="margin-left: 33px;"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Store assistant</strong>
+                        <div class="position-relative mb-4 finalelement-card">
+                            <i class="finalelement-icon fa-solid fa-gift text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Store assistant</strong>
                             </h5>
-                            <p class="mb-2" style="color:#ededed"><strong>Città del sole</strong> | <small>Dec 2015 -
+                            <p class="mb-2"><strong>Città del sole</strong> | <small>Dec 2015 -
                                     Dec 2015</small></p>
-                            <p style="color:#ededed">I went to work as a sales assistant during the Christmas period,
+                            <p>I went to work as a sales assistant during the Christmas period,
                                 helping customers with
                                 their purchases and also assisting with gift wrapping. It was a great opportunity to
                                 assist customers in finding the perfect gifts for their loved ones.</p>
@@ -647,21 +508,27 @@
     <!--  Start Education -->
     <div class="container-fluid pt-5 pb-5" id="education">
         <div class="container">
-            <h1 class="display-3 text-primary" style="font-family: Serif;">Education</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#3A486D; opacity: 0.3; margin-top: -5px;">
+            <h1 class="display-3 text-primary text-serif">Education</h1>
+            <hr class="hr-style bg-primary">
             <br>
-            <div class="row align-items-center" data-scroll-reveal="enter bottom move 50px over 0.6s">
+            <div class="row align-items-center panel-group" id="accordion" role="tablist" data-scroll-reveal="enter bottom move 50px over 0.6s">
                 <div class="col-lg-6" style="align-items: initial;">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
-                        <div class="position-relative mb-4">
-                            <i class="firstelement fa-solid fa-book-open text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">MSc </strong>- ICT
+                        <div class="panel panel-default position-relative mb-4">
+                            <div class="panel-heading active" role="tab" id="heading11">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11"
+                                    aria-expanded="true" aria-controls="collapse11">
+                            <i class="firstelement-icon fa-solid fa-book-open text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">MSc </strong>- ICT
                                 engineering, business and innovation</h5>
                             <p class="mb-2"><strong>Polytechnic University of Milan</strong><br class="displayMobile"> |
                                 <small>Sep 2021 - in
                                     progress</small>
                             </p>
+                        </a>
+                    </div>
+                    <div id="collapse11" class="panel-collapse collapse show" role="tabpanel"
+                        aria-labelledby="heading11">
                             <p>In the first year, I consolidated my programming knowledge acquired during my Bachelor's
                                 degree, in particular deepening my understanding of distributed systems, artificial
                                 intelligence and machine learning. In the second year I broadened my education in
@@ -670,14 +537,22 @@
                                 had the opportunity to work on interdisciplinary projects that combined my skills in
                                 computer engineering with those in management engineering to solve real problems in the
                                 corporate world.</p>
+                            </div>
                         </div>
-                        <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-graduation-cap text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">BSc </strong>- Computer
+                        <div class="panel panel-default position-relative mb-4">
+                            <i class="centralelement-icon fa-solid fa-graduation-cap text-primary position-absolute"></i>   
+                            <div class="panel-heading" role="tab" id="heading12">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12"
+                                    aria-expanded="false" aria-controls="collapse12">
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">BSc </strong>- Computer
                                 Science engineering</h5>
                             <p class="mb-2"><strong>University of Padua</strong><br class="displayMobile"> | <small>Sep
                                     2018 - Sep 2021</small>
                             </p>
+                        </a>
+                    </div>
+                    <div id="collapse12" class="panel-collapse collapse" role="tabpanel"
+                        aria-labelledby="heading12">
                             <p>I have acquired solid programming knowledge, both in low-level languages such as C and
                                 assembly, and in high-level languages such as Python and Java. I also learnt how to use
                                 tools such as Git for version control of code and acquired skills in team software
@@ -685,33 +560,51 @@
                                 structures, as well as of operating systems and computer networks. I also had the
                                 opportunity to work on computer engineering projects in teams, developing software
                                 solutions for real problems.</p>
+                            </div>
                         </div>
                         <div class="displayMobile">
-                            <div class="position-relative mb-4">
-                                <i class="centralelement fa-solid fa-shield-halved text-primary position-absolute"></i>
-                                <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Course </strong>-
+                            <div class="panel panel-default position-relative mb-4">
+                                <div class="panel-heading" role="tab" id="heading13">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13"
+                                    aria-expanded="false" aria-controls="collapse13">
+
+                                <i class="centralelement-icon fa-solid fa-shield-halved text-primary position-absolute"></i>
+                                <h5 class="font-weight-bold mb-1"><strong class="text-primary">Course </strong>-
                                     Applied
                                     WEB application Security</h5>
                                 <p class="mb-2"><strong>Metropolia University</strong><br class="displayMobile"> |
                                     <small>Feb 2021 - May
                                         2021</small>
                                 </p>
+                            </a>
+                        </div>
+                        <div id="collapse13" class="panel-collapse collapse" role="tabpanel"
+                            aria-labelledby="heading13">
                                 <p>This course provided an opportunity to gain a deeper understanding of cyber attacks
                                     on web applications and their impact on organizations. I learned about prevalent
                                     threats, created a well-organized testing procedure using the Penetration Testing
                                     Execution Standard and learned how to test, repair vulnerabilities and implement
                                     secure web applications. I also studied various attack methods such as SQL injection
                                     and cross-site scripting.</p>
+                                </div>
                             </div>
-                            <div class="position-relative mb-4">
-                                <i class="finalelement fa-solid fa-school text-primary position-absolute"></i>
-                                <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">High School </strong>-
+                            <div class="panel panel-default position-relative mb-4 finalelement-card"> 
+                                <div class="panel-heading" role="tab" id="heading14">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14"
+                                    aria-expanded="false" aria-controls="collapse14">
+                                <i class="finalelement-icon fa-solid fa-school text-primary position-absolute" style="margin-left: 33px;"></i>
+                                <h5 class="font-weight-bold mb-1"><strong class="text-primary">High School </strong>-
                                     Scientific </h5>
                                 <p class="mb-2"><strong>Liceo Scientifico Statale Leonardo</strong><br
                                         class="displayMobile"> | <small>2013 -
                                         2018</small></p>
+                                    </a>
+                                </div>
+                                <div id="collapse14" class="panel-collapse collapse" role="tabpanel"
+                                    aria-labelledby="heading14">
                                 <p>Here I started studying computer science, I learned to use the Microsoft Office
                                     package as well as the basics of HTML and VBA.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -719,8 +612,8 @@
                 <div class="displayPc col-lg-6">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="firstelement fa-solid fa-shield-halved text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Course </strong>- Applied
+                            <i class="firstelement-icon fa-solid fa-shield-halved text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Course </strong>- Applied
                                 WEB application Security</h5>
                             <p class="mb-2"><strong>Metropolia University</strong> | <small>Feb 2021 - May 2021</small>
                             </p>
@@ -731,9 +624,9 @@
                                 secure web applications. I also studied various attack methods such as SQL injection
                                 and cross-site scripting.</p>
                         </div>
-                        <div class="position-relative mb-4">
-                            <i class="finalelement fa-solid fa-school text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">High School </strong>-
+                        <div class="position-relative mb-4 finalelement-card">
+                            <i class="finalelement-icon fa-solid fa-school text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">High School </strong>-
                                 Scientific </h5>
                             <p class="mb-2"><strong>Liceo Scientifico Statale Leonardo</strong> | <small>2013 -
                                     2018</small></p>
@@ -750,16 +643,16 @@
     <!--  Start Certification -->
     <div class="container-fluid pt-5 pb-5" id="certification">
         <div class="container">
-            <h1 class="display-3 text-primary" style="font-family: Serif;">Certifications</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#3A486D; opacity: 0.3; margin-top: -5px;">
+            <h1 class="display-3 text-primary text-serif">Certifications</h1>
+            <hr class="hr-style bg-primary">
             <br>
+            QUII FARE SENZA LINEA E FARE UN FILTERING
             <div class="row align-items-center" data-scroll-reveal="enter bottom move 50px over 0.6s">
                 <div class="col-lg-6" style="align-items: initial;">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="firstelement fa-solid fa-circle-nodes text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                            <i class="firstelement-icon fa-solid fa-circle-nodes text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                 Platform Thinking: what's beyond Uber?</h5>
                             <p class="mb-2"><strong>Coursera</strong><br class="displayMobile"> | <small>Issued Mar
                                     2023</small></p>
@@ -775,8 +668,8 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-circle-nodes text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                            <i class="centralelement-icon fa-solid fa-circle-nodes text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                 Platform Thinking: designing a Platform</h5>
                             <p class="mb-2"><strong>Coursera</strong><br class="displayMobile"> | <small>Issued Mar
                                     2023</small></p>
@@ -791,8 +684,8 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-circle-nodes text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                            <i class="centralelement-icon fa-solid fa-circle-nodes text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                 Platform Thinking: exploiting data through platforms</h5>
                             <p class="mb-2"><strong>Coursera</strong><br class="displayMobile"> | <small>Issued Mar
                                     2023</small></p>
@@ -808,8 +701,8 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-chess-rook text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                            <i class="centralelement-icon fa-solid fa-chess-rook text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                 Fundamentals of Strategy</h5>
                             <p class="mb-2"><strong>Polytechnic University of Milan</strong><br class="displayMobile"> |
                                 <small>Issued Oct 2022</small>
@@ -827,8 +720,8 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-calculator text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                            <i class="centralelement-icon fa-solid fa-calculator text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                 Fundamentals of financial and management accounting</h5>
                             <p class="mb-2"><strong>Coursera</strong><br class="displayMobile"> | <small>Issued Oct
                                     2022</small></p>
@@ -845,8 +738,8 @@
                         </div>
                         <div class="displayMobile">
                             <div class="position-relative mb-4">
-                                <i class="centralelement fa-solid fa-graduation-cap text-primary position-absolute"></i>
-                                <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">University </strong>-
+                                <i class="centralelement-icon fa-solid fa-graduation-cap text-primary position-absolute"></i>
+                                <h5 class="font-weight-bold mb-1"><strong class="text-primary">University </strong>-
                                     Bachelor Degree
                                 </h5>
                                 <p class="mb-2"><strong>University of Padua</strong><br class="displayMobile"> |
@@ -860,8 +753,8 @@
                                 </div>
                             </div>
                             <div class="position-relative mb-4">
-                                <i class="centralelement fa-solid fa-code text-primary position-absolute"></i>
-                                <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                                <i class="centralelement-icon fa-solid fa-code text-primary position-absolute"></i>
+                                <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                     Java 8 EE Developer
                                 </h5>
                                 <p class="mb-2"><strong>Udemy</strong><br class="displayMobile"> | <small>Issued Sep
@@ -878,7 +771,7 @@
                                 </div>
                             </div>
                             <div class="position-relative mb-4">
-                                <i class="centralelement fa-solid fa-code text-primary position-absolute"></i>
+                                <i class="centralelement-icon fa-solid fa-code text-primary position-absolute"></i>
                                 <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D;">Online Course
                                     </strong>-
                                     Python 3.11 Complete Guide
@@ -897,8 +790,8 @@
                                 </div>
                             </div>
                             <div class="position-relative mb-4">
-                                <i class="centralelement fa-solid fa-code text-primary position-absolute"></i>
-                                <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                                <i class="centralelement-icon fa-solid fa-code text-primary position-absolute"></i>
+                                <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                     HTML5
                                 </h5>
                                 <p class="mb-2"><strong>Lezione-online</strong><br class="displayMobile"> |
@@ -916,8 +809,8 @@
                                 </div>
                             </div>
                             <div class="position-relative mb-4">
-                                <i class="centralelement fa-solid fa-language text-primary position-absolute"></i>
-                                <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">B2 English </strong>-
+                                <i class="centralelement-icon fa-solid fa-language text-primary position-absolute"></i>
+                                <h5 class="font-weight-bold mb-1"><strong class="text-primary">B2 English </strong>-
                                     TOEIC Listening and Reading
                                 </h5>
                                 <p class="mb-2"><strong>The TOEIC Program</strong><br class="displayMobile"> |
@@ -925,8 +818,8 @@
                                 </p>
                             </div>
                             <div class="position-relative mb-4">
-                                <i class="finalelement fa-solid fa-language text-primary position-absolute"></i>
-                                <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">B2 English </strong>-
+                                <i class="finalelement-icon fa-solid fa-language text-primary position-absolute"></i>
+                                <h5 class="font-weight-bold mb-1"><strong class="text-primary">B2 English </strong>-
                                     CLA Listening and Reading
                                 </h5>
                                 <p class="mb-2"><strong>University of Padua</strong><br class="displayMobile"> |
@@ -945,8 +838,8 @@
                 <div class="displayPc col-lg-6">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="firstelement fa-solid fa-graduation-cap text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">University </strong>-
+                            <i class="firstelement-icon fa-solid fa-graduation-cap text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">University </strong>-
                                 Bachelor Degree
                             </h5>
                             <p class="mb-2"><strong>University of Padua</strong><br class="displayMobile"> |
@@ -959,8 +852,8 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-code text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                            <i class="centralelement-icon fa-solid fa-code text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                 Java 8 EE Developer
                             </h5>
                             <p class="mb-2"><strong>Udemy</strong><br class="displayMobile"> | <small>Issued Sep
@@ -977,7 +870,7 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-code text-primary position-absolute"></i>
+                            <i class="centralelement-icon fa-solid fa-code text-primary position-absolute"></i>
                             <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D;">Online Course </strong>-
                                 Python 3.11 Complete Guide
                             </h5>
@@ -995,8 +888,8 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-code text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">Online Course </strong>-
+                            <i class="centralelement-icon fa-solid fa-code text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">Online Course </strong>-
                                 HTML5
                             </h5>
                             <p class="mb-2"><strong>Lezione-online</strong><br class="displayMobile"> | <small>Issued
@@ -1012,16 +905,16 @@
                             </div>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="centralelement fa-solid fa-language text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">B2 English </strong>- TOEIC
+                            <i class="centralelement-icon fa-solid fa-language text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">B2 English </strong>- TOEIC
                                 Listening and Reading
                             </h5>
                             <p class="mb-2"><strong>The TOEIC Program</strong><br class="displayMobile"> | <small>Issued
                                     Apr 2021 - Expired Apr 2023</small></p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="finalelement fa-solid fa-language text-primary position-absolute"></i>
-                            <h5 class="font-weight-bold mb-1"><strong style="color:#3A486D">B2 English </strong>- CLA
+                            <i class="finalelement-icon fa-solid fa-language text-primary position-absolute"></i>
+                            <h5 class="font-weight-bold mb-1"><strong class="text-primary">B2 English </strong>- CLA
                                 Listening and Reading
                             </h5>
                             <p class="mb-2"><strong>University of Padua</strong><br class="displayMobile"> |
@@ -1042,11 +935,10 @@
     <!-- Certification End -->
 
     <!-- Code Start -->
-    <div class="container-fluid pt-5 pb-5" id="code" style="background-color: #9ca3b5;">
+    <div class="container-fluid pt-5 pb-5 bg-grey" id="code">
         <div class="container">
-            <h1 class="display-3 text-white" style="font-family: Serif;">Code</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#fff; opacity: 0.7; margin-top: -5px;">
+            <h1 class="display-3 text-white text-serif">Code</h1>
+            <hr class="hr-style bg-white">
             <br>
             <div class="row align-items-center">
                 <div class="col-md-4">
@@ -1154,10 +1046,10 @@
     <section class="mini" id="work-process">
         <div class="mini-content container-fluid pb-5" id="project">
             <div class="container">
-                <h1 class="display-3 text-primary" style="font-family: Serif;">Projects</h1>
-                <hr
-                    style="width:100%;text-align:left;margin-left:0; background-color:#3A486D; opacity: 0.3; margin-top: -5px;">
+                <h1 class="display-3 text-primary text-serif">Projects</h1>
+                <hr class="hr-style bg-primary">
                 <br>
+                QUI LASCIA SOLO I PRINCIPALI E SCRIVI E RIMANDA A PROFILO GITHUB
                 <div class="row" data-scroll-reveal="enter bottom move 50px over 0.6s">
                     <div class="col-12 text-center mb-2">
                         <ul class="list-inline mb-4" id="portfolio-flters">
@@ -1485,11 +1377,10 @@
     <!-- Project End -->
 
     <!-- Interest Start -->
-    <div class="container-fluid pt-5 pb-5" id="interest" style="background-color: #9ca3b5;">
+    <div class="container-fluid pt-5 pb-5 bg-grey" id="interest">
         <div class="container">
-            <h1 class="display-3 text-white" style="font-family: Serif;">Interests</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#fff; opacity: 0.7; margin-top: -5px;">
+            <h1 class="display-3 text-white text-serif">Interests</h1>
+            <hr class="hr-style bg-white">
             <br>
             <div class="row" data-scroll-reveal="enter bottom move 50px over 0.6s">
                 <div class="col-lg-3 mb-5">
@@ -1572,12 +1463,11 @@
     <!-- Contact Start -->
     <div class="container-fluid pt-5 pb-5" id="contact">
         <div class="container text-center">
-            <h1 class="display-3 text-primary" style="font-family: Serif;text-align:left;">Contacts</h1>
-            <hr
-                style="width:100%;text-align:left;margin-left:0; background-color:#3A486D; opacity: 0.3; margin-top: -5px;">
+            <h1 class="display-3 text-primary text-serif text-left">Contacts</h1>
+            <hr class="hr-style bg-primary">
             <br>
-            <p>Feel free to drop me an <b style="color:#3A486D">email</b> for any inquiries or simply <b
-                    style="color:#3A486D">connect</b> with me on my preferred <b style="color:#3A486D">social media</b>
+            <p>Feel free to drop me an <b class="text-primary">email</b> for any inquiries or simply <b
+                    class="text-primary">connect</b> with me on my preferred <b class="text-primary">social media</b>
                 platforms :)</p>
             <div class="d-flex justify-content-center mb-4">
                 <a class="btn btn-outline-primary btn-social mr-2" href="mailto:pietro.valente@yahoo.com"><i

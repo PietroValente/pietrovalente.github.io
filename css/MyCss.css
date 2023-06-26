@@ -1,345 +1,428 @@
-/*Responsive corrections*/
-@media only screen and (orientation: landscape){
-  .adj4{
-    width: 10%;
-  }
-  .adj5{
-    text-align: center !important;
-  }
-  .adj6{
-    justify-content: center !important;
-  }
-  .firstelement{
-    top: -25px; 
-    left: -33px; 
-    background-color: white; 
-    padding-top: 30px; 
-    padding-bottom: 15px;
-  }
-  .centralelement{
-    top: -10px; 
-    left: -33px; 
-    background-color: white; 
-    padding-top: 15px; 
-    padding-bottom: 15px;
-  }
-  .finalelement{
-    top: -10px; 
-    left: -33px; 
-    background-color: white; 
-    padding-top: 15px; 
-  }
-  .displayMobile{
-    display: none;
-  }
-  .card-body{
-    height: 180px;
-  }
-  .panel-heading  a {
-    pointer-events: none;
-  }
-  .panel-collapse{
-    display: inline-block !important;
-  }
+/* Responsive corrections - LANDSCAPE */
+@media only screen and (orientation: landscape) {
+
+	/* Disability items mobile only */
+	.displayMobile {
+		display: none;
+	}
+
+	/* Logo dimension in the toolbar */
+	.logo-dimension {
+		width: 10%;
+	}
+
+	/* Skill cards title alignment */
+	.skill-card-title {
+		text-align: center !important;
+		justify-content: center !important;
+		background-color: #fff;
+		padding: 10px;
+		border-radius: 25px 25px 0px 0px;
+		padding-top: 20px;
+	}
+
+	/* Icons descriptions for timelines */
+	.firstelement-icon {
+		top: -25px;
+		left: -33px;
+		background-color: white;
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+
+	.centralelement-icon {
+		top: -10px;
+		left: -33px;
+		background-color: white;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.finalelement-icon {
+		top: -10px;
+		left: -33px;
+		background-color: white;
+		padding-top: 15px;
+		margin-left: 33px;
+	}
+
+	/* PC Projects card body same size */
+	.card-body {
+		height: 180px;
+	}
+
+	/* Panel description and characteristics */
+	.panel-heading a {
+		pointer-events: none;
+	}
+
+	.panel-collapse {
+		display: inline-block !important;
+	}
 }
 
-@media only screen and (orientation: portrait){
-  .adj2{
-    margin-bottom: 10%;
-  } 
-  .adj3{
-    display: flex;
-    justify-content: space-between;
-  }
-  .adj4{
-    margin-left: 5%;
-    width: 20%;
-  }
-  .adj5{
-    text-align: left !important;
-  }
-  .firstelement{
-    top: -20px; 
-    left: -33px; 
-    background-color: white; 
-    padding-top: 30px; 
-    padding-bottom: 15px;
-  }
-  .centralelement{
-    top: -10px; 
-    left: -33px; 
-    background-color: white; 
-    padding-top: 15px; 
-    padding-bottom: 15px;
-  }
-  .finalelement{
-    top: -10px; 
-    left: -33px; 
-    background-color: white; 
-    padding-top: 15px; 
-    padding-bottom: 70px;
-  }
-  .displayPc{
-    display: none;
-  }
-  .display-1 {
-    font-weight: 100%;
-    line-height: 100%;
-  }
+/* Responsive corrections - PORTRAIT */
+@media only screen and (orientation: portrait) {
 
-  .panel-heading  a:before {
-    font-family: 'Glyphicons Halflings';
-    content: '\203A';
-    font-weight: bold;
-    font-size: 20px;
-    float: right;
-    opacity: 0.8;
-    transition: all 0.5s;
-  }
-  .panel-heading.active a:before {
-    -webkit-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    transform: rotate(90deg);
-  }
+	/* Disability items pc only */
+	.displayPc {
+		display: none;
+	}
+
+	/* Adjustments mobile toolbar */
+	.mobile-toolbar {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	/* Logo dimension in the toolbar */
+	.logo-dimension {
+		margin-left: 5%;
+		width: 20%;
+	}
+
+	/* Skill cards title alignment */
+	.skill-card-title {
+		text-align: left !important;
+		background-color: #fff;
+		padding: 10px;
+		border-radius: 25px 25px 0px 0px;
+		padding-top: 20px;
+	}
+
+	/* Icons descriptions for timelines */
+	.firstelement-icon {
+		top: -20px;
+		left: -33px;
+		background-color: white;
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+
+	.centralelement-icon {
+		top: -10px;
+		left: -33px;
+		background-color: white;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.finalelement-icon {
+		top: -10px;
+		left: -33px;
+		background-color: white;
+		padding-top: 15px;
+		padding-bottom: 90px;
+	}
+
+	/* Panel description and characteristics */
+	.panel-heading {
+		padding-right: 15px;
+	}
+
+	.panel-heading>a,
+	.panel-heading>a:active {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.panel-heading a:before {
+		font-family: 'Glyphicons Halflings';
+		content: '\203A';
+		font-weight: bold;
+		font-size: 20px;
+		float: right;
+		opacity: 0.8;
+		transition: all 0.5s;
+	}
+
+	.panel-heading.active a:before {
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		transform: rotate(90deg);
+	}
 }
 
-/* Panel description for mobile collapse*/
-.panel-heading {
-  padding-right: 15px;
-}
-.panel-heading>a, .panel-heading>a:active {
-  text-decoration: none;
-  color: inherit;
+/* GLOBAL corrections */
+
+/*Last card adjustments (both landscape and portrait)*/
+.finalelement-card {
+	padding-left: 33px;
+	margin-left: -33px;
+	top: 0;
+	background-color: #fff
 }
 
-/* Add animation to "home page content" */
+/* Skill cards common features */
+.skill-card-body {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 0px 0px 25px 25px;
+	padding-top: 30px;
+	margin-top: -25px;
+}
+
+.skill-card-icon {
+	font-size: 160%;
+	margin: auto;
+	width: 100%;
+}
+
+/* Header min height */
+.header-min{
+  min-height: 100vh;
+}
+
+/* text Serif */
+.text-serif{
+  font-family: Serif;
+}
+
+/* text underline */
+.text-underline{
+  text-decoration: underline;
+}
+
+/* hr class */
+.hr-style{
+  width:100%;
+  text-align:left;
+  margin-left:0;
+  opacity: 0.3;
+}
+
+/* Add animation to Home image */
 .animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1.5s
+	position: relative;
+	-webkit-animation-name: animatebottom;
+	-webkit-animation-duration: 1s;
+	animation-name: animatebottom;
+	animation-duration: 1.5s
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0; } 
-  to { bottom:0px; opacity:1 }
+	from {
+		bottom: -100px;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 0px;
+		opacity: 1
+	}
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0;} 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+	from {
+		bottom: -100px;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 1
+	}
 }
 
-/* 
----------------------------------------------
-preloader
---------------------------------------------- 
-*/
+/* Preloader */
 #preloader {
-  overflow: hidden;
-  background-color: #3A486D;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: fixed;
-  z-index: 9999;
-  color: #fff;
+	overflow: hidden;
+	background-color: #3A486D;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: fixed;
+	z-index: 9999;
+	color: #fff;
 }
 
 #preloader .jumper {
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-  position: absolute;
-  margin: auto;
-  width: 50px;
-  height: 50px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+	position: absolute;
+	margin: auto;
+	width: 50px;
+	height: 50px;
 }
 
-#preloader .jumper > div {
-  background-color: #fff;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  position: absolute;
-  opacity: 0;
-  width: 50px;
-  height: 50px;
-  -webkit-animation: jumper 1s 0s linear infinite;
-  animation: jumper 1s 0s linear infinite;
+#preloader .jumper>div {
+	background-color: #fff;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	position: absolute;
+	opacity: 0;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: jumper 1s 0s linear infinite;
+	animation: jumper 1s 0s linear infinite;
 }
 
-#preloader .jumper > div:nth-child(2) {
-  -webkit-animation-delay: 0.33333s;
-  animation-delay: 0.33333s;
+#preloader .jumper>div:nth-child(2) {
+	-webkit-animation-delay: 0.33333s;
+	animation-delay: 0.33333s;
 }
 
-#preloader .jumper > div:nth-child(3) {
-  -webkit-animation-delay: 0.66666s;
-  animation-delay: 0.66666s;
+#preloader .jumper>div:nth-child(3) {
+	-webkit-animation-delay: 0.66666s;
+	animation-delay: 0.66666s;
 }
 
 @-webkit-keyframes jumper {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+
+	5% {
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 0;
+	}
 }
 
 @keyframes jumper {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
-  }
-  5% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+
+	5% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
 
-
-/* 
----------------------------------------------
-parallax & home seperator
---------------------------------------------- 
-*/
+/* Animation Projects cards*/
 .mini {
-  min-height: 215px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 90px;
+	min-height: 215px;
+	overflow: hidden;
+	position: relative;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
 .mini:before {
-  content: '';
-  position: absolute;
-  width: 140%;
-  height: 140%;
-  opacity: .95;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-image: url(../images/work-process-bg.png);
-  z-index: 2;
-  top: -20%;
-  left: -20%;
+	content: '';
+	position: absolute;
+	width: 140%;
+	height: 140%;
+	opacity: .95;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-image: url(../images/work-process-bg.png);
+	z-index: 2;
+	top: -20%;
+	left: -20%;
 }
 
 .mini .mini-content {
-  position: relative;
-  z-index: 3;
+	position: relative;
+	z-index: 3;
 }
 
 .mini .mini-content .info {
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .mini .mini-content .info small {
-  display: block;
-  font-weight: 400;
-  font-size: 13px;
-  margin-bottom: 5px;
+	display: block;
+	font-weight: 400;
+	font-size: 13px;
+	margin-bottom: 5px;
 }
 
 .mini .mini-content .info strong {
-  font-weight: 700;
-  font-size: 17px;
-  margin-bottom: 40px;
-  display: block;
+	font-weight: 700;
+	font-size: 17px;
+	margin-bottom: 40px;
+	display: block;
 }
 
 .mini .mini-content .info h1 {
-  color: #fff;
-  font-weight: 500;
-  font-size: 28px;
-  letter-spacing: 0.25px;
-  margin-bottom: 30px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 28px;
+	letter-spacing: 0.25px;
+	margin-bottom: 30px;
 }
 
 .mini .mini-content .info p {
-  letter-spacing: 1px;
-  margin-bottom: 40px;
-  color: #fff;
-  letter-spacing: 0.25px;
-  line-height: 26px;
-  font-weight: 400;
-  font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 40px;
+	color: #fff;
+	letter-spacing: 0.25px;
+	line-height: 26px;
+	font-weight: 400;
+	font-size: 15px;
 }
 
 .mini .mini-content .mini-box {
-  display: block;
-  background: #fff;
-  position: relative;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+	display: block;
+	background: #fff;
+	position: relative;
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
 }
 
 .mini .mini-content .mini-box:hover {
-  margin-top: -10px;
+	margin-top: -10px;
 }
 
 .mini .mini-content .mini-box:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  background: #fff;
-  width: 100%;
-  opacity: .15;
-  height: 100%;
-  bottom: -10px;
-  left: 0px;
-  right: -20px;
-  margin: auto;
+	content: '';
+	position: absolute;
+	z-index: -1;
+	background: #fff;
+	width: 100%;
+	opacity: .15;
+	height: 100%;
+	bottom: -10px;
+	left: 0px;
+	right: -20px;
+	margin: auto;
 }
 
 .mini .mini-content .mini-box i {
-  display: block;
-  font-size: 20px;
-  margin-bottom: 15px;
+	display: block;
+	font-size: 20px;
+	margin-bottom: 15px;
 }
 
 .mini .mini-content .mini-box span {
-  display: block;
-  font-weight: 400;
-  font-size: 14px;
-  color: #777;
-  letter-spacing: .75px;
+	display: block;
+	font-weight: 400;
+	font-size: 14px;
+	color: #777;
+	letter-spacing: .75px;
 }
 
 .mini .mini-content .mini-box strong {
-  display: block;
-  font-weight: 400;
-  font-size: 17px;
-  color: #1e1e1e;
-  letter-spacing: 0.25px;
-  margin-bottom: 5px;
-  margin-top: 20px;
-}
-
-
-.hobbiyCard{
-  padding-top: 30px;
+	display: block;
+	font-weight: 400;
+	font-size: 17px;
+	color: #1e1e1e;
+	letter-spacing: 0.25px;
+	margin-bottom: 5px;
+	margin-top: 20px;
 }
