@@ -140,8 +140,6 @@
     $('.panel-collapse').on('hide.bs.collapse', function () {
         $(this).siblings('.panel-heading').removeClass('active');
     });
-
-    document.getElementById('startPortfolio').click();
     
 })(jQuery);
 

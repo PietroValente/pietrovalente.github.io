@@ -9539,6 +9539,11 @@ button.bg-dark:focus {
   color: #fff !important;
 }
 
+.text-grey {
+  color: #fff !important;
+  opacity: 0.8;
+}
+
 .text-primary {
   border: 10px;
   color: #3A486D !important;
