@@ -140,6 +140,9 @@
     $('.panel-collapse').on('hide.bs.collapse', function () {
         $(this).siblings('.panel-heading').removeClass('active');
     });
+
+    //Start on right section of Certifications
+    document.getElementById('startPortfolio').click();
     
 })(jQuery);
 
