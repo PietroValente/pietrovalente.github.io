@@ -49,6 +49,7 @@
     // Typed Initiate
     if ($('.typed-text-output').length == 1) {
         var typed_strings = $('.typed-text').text();
+        var Typed = require('../lib/typed/typed.min.js');
         var typed = new Typed('.typed-text-output', {
             strings: ['Grew up on pizza, code and travel'],
             typeSpeed: 30,
