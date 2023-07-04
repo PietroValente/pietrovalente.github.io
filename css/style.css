@@ -9976,6 +9976,10 @@ h6,
   border-radius: 60px;
 }
 
+.no-event{
+  pointer-events: none;
+}
+
 .portfolio-item .portfolio-btn {
   position: absolute;
   width: 0;
