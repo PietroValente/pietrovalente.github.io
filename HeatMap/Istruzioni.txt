@@ -1,0 +1,9 @@
+1.Debugger-csv.cpp compilato e eseguito (nella stessa cartella devono esserci file sorgente GPSn.txt e Logn.txt)
+2.Converti output.csv generato su https://www.convertcsv.com/csv-to-geojson.htm
+
+Passaggio opzionale teoricamente non più necessario
+-Apri il file scaricato in vsc e sostituisci con regular expression (.*) questo ("SNR":)"(\d+)" con $1 $2, e anche ("SNR":)"(\d+.\d+)" con $1 $2
+
+3.Modifica file sorgente nel file index.html a riga 76 (di default output.geojson nella stessa cartella di index)
+4.Lancia chrome da terminale con il comando: google-chrome --user-data-dir="~/chrome-dev-disabled-security" --disable-web-security --disable-site-isolation-trials
+5.Apri index.html
