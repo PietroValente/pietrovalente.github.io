@@ -1,6 +1,23 @@
 {
    "type": "FeatureCollection",
    "features": [
+{
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ 7.73530213404474,45.04133034557901 ] 
+    },
+    "properties": {
+    "TIME":"15:17:00",
+    "MODALITY":"BC",
+    "SNR":0,
+    "CFO":"22.74",
+    "BLER":"",
+    "INDEX":"1",
+    "SEGMENTS":"172937.ts ",
+    "FIELD10":""
+    }
+  },
   {
     "type": "Feature",
     "geometry": {
