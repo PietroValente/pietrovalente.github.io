@@ -7838,6 +7838,10 @@ button.bg-dark:focus {
   padding: 1rem !important;
 }
 
+.p-35 {
+  padding: 20px !important;
+}
+
 .pt-3,
 .py-3 {
   padding-top: 1rem !important;

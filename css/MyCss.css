@@ -128,6 +128,7 @@
 		background-color: white;
 		padding-top: 15px;
 		padding-bottom: 90px;
+		margin-left: 33px;
 	}
 
 	/* Panel description and characteristics */
@@ -196,6 +197,23 @@
   text-align:left;
   margin-left:0;
   opacity: 0.3;
+}
+
+/* Button style */
+.button-style{
+	border: 0.1px solid #3A486D; 
+	color:#3A486D;
+}
+
+/* Opacity progress bar */
+.opacity-4{
+	opacity: 0.77;
+}
+.opacity-3{
+	opacity: 0.54;
+}
+.opacity-2{
+	opacity: 0.3;
 }
 
 /* Add animation to Home image */
