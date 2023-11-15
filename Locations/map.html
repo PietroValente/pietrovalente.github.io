@@ -25,29 +25,27 @@
         bottom: 0;
         width: 100%;
       }
-      .home {
-        background-image: url('icons/home.png');
+      .marker {
         background-size: cover;
         width: 20px;
         height: 20px;
         border-radius: 50%;
         cursor: pointer;
+      }
+      .home {
+        background-image: url('icons/home.png');
       }
       .home-actual {
         background-image: url('icons/home-actual.png');
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        cursor: pointer;
       }
-      .travel {
-        background-image: url('icons/plane.png');
-        background-size: cover;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        cursor: pointer;
+      .travel1 {
+        background-image: url('icons/plane1.png');
+      }
+      .travel2 {
+        background-image: url('icons/plane2.png');
+      }
+      .travel3 {
+        background-image: url('icons/plane3.png');
       }
       .mapboxgl-popup {
         max-width: 200px;
@@ -56,6 +54,14 @@
         text-align: center;
         font-family: 'Open Sans', sans-serif;
         color: #3A486D;
+        border-radius: 30px;
+      }
+      .mapboxgl-popup-close-button {
+        position: absolute;
+        bottom: 0;
+        height: 130%;
+        width: 100%;
+        opacity: 0;
       }
     </style>
   </head>
@@ -121,7 +127,7 @@
         ]
       };
 
-      const travel = {
+      const travel1 = {
         'type': 'Homes',
         'features': [
           {
@@ -160,18 +166,52 @@
         ]
       };
 
+      const travel2 = {
+        'type': 'Travel2',
+        'features': [
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [-6.266155, 53.350140]
+            },
+            'properties': {
+              'title': 'Sep 2019',
+              'description': 'Dublin, Ireland'
+            }
+          }
+        ]
+      };
+
+      const travel3 = {
+        'type': 'Travel3',
+        'features': [
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [-0.118092, 51.509865]
+            },
+            'properties': {
+              'title': 'Sep 2019',
+              'description': 'London, England'
+            }
+          }
+        ]
+      };
+
       const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/light-v11',
         center: [10, 45],
-        zoom: 4
+        zoom: 3
       });
 
       // add markers to map
       for (const feature of home.features) {
         // create a HTML element for each feature
         const el = document.createElement('div');
-        el.className = 'home';
+        el.className = 'marker home';
 
         // make a marker for each feature and add it to the map
         new mapboxgl.Marker(el)
@@ -187,7 +227,7 @@
       for (const feature of homeactual.features) {
         // create a HTML element for each feature
         const el = document.createElement('div');
-        el.className = 'home-actual';
+        el.className = 'marker home-actual';
 
         // make a marker for each feature and add it to the map
         new mapboxgl.Marker(el)
@@ -200,10 +240,42 @@
           )
           .addTo(map);
       }
-      for (const feature of travel.features) {
+      for (const feature of travel1.features) {
         // create a HTML element for each feature
         const el = document.createElement('div');
-        el.className = 'travel';
+        el.className = 'marker travel1';
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 15 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              )
+          )
+          .addTo(map);
+      }
+      for (const feature of travel2.features) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = 'marker travel2';
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 15 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              )
+          )
+          .addTo(map);
+      }
+      for (const feature of travel3.features) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = 'marker travel3';
 
         // make a marker for each feature and add it to the map
         new mapboxgl.Marker(el)
