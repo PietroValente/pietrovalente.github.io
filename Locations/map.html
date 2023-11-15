@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pietro Valente | Locations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../img/icon.png" type="image/icon type">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+      .home {
+        background-image: url('icons/home.png');
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .home-actual {
+        background-image: url('icons/home-actual.png');
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .travel {
+        background-image: url('icons/plane.png');
+        background-size: cover;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .mapboxgl-popup {
+        max-width: 200px;
+      }
+      .mapboxgl-popup-content {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        color: #3A486D;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoic29vb3R5IiwiYSI6ImNsazZybjNnNTAyZ2UzcXFxbm56cTZxdjMifQ.EAqpJO5x09WfftZm601eag';
+
+      const home = {
+        'type': 'Homes',
+        'features': [
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [10.211802, 45.541553]
+            },
+            'properties': {
+              'title': 'Childhood',
+              'description': 'Brescia, Italy'
+            }
+          },
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [11.883333, 45.416667]
+            },
+            'properties': {
+              'title': 'Bachelor\'s degree',
+              'description': 'Padua, Italy'
+            }
+          },
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [9.2, 45.466667]
+            },
+            'properties': {
+              'title': 'Master\'s degree',
+              'description': 'Milan, Italy'
+            }
+          }
+        ]
+      };
+
+      const homeactual = {
+        'type': 'HomeActual',
+        'features': [
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [-9.1393366, 38.7222524]
+            },
+            'properties': {
+              'title': 'From 2024',
+              'description': 'Lisbon, Portugal'
+            }
+          }
+        ]
+      };
+
+      const travel = {
+        'type': 'Homes',
+        'features': [
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [2.211802, 45.541553]
+            },
+            'properties': {
+              'title': 'Sep 2024',
+              'description': 'Brescia, Italy'
+            }
+          },
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [19.883333, 45.416667]
+            },
+            'properties': {
+              'title': 'Bachelor\'s degree',
+              'description': 'Padua, Italy'
+            }
+          },
+          {
+            'type': 'Feature',
+            'geometry': {
+              'type': 'Point',
+              'coordinates': [5.2, 45.466667]
+            },
+            'properties': {
+              'title': 'Master\'s degree',
+              'description': 'Milan, Italy'
+            }
+          }
+        ]
+      };
+
+      const map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/light-v11',
+        center: [10, 45],
+        zoom: 4
+      });
+
+      // add markers to map
+      for (const feature of home.features) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = 'home';
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 15 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              )
+          )
+          .addTo(map);
+      }
+      for (const feature of homeactual.features) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = 'home-actual';
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 15 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              )
+          )
+          .addTo(map);
+      }
+      for (const feature of travel.features) {
+        // create a HTML element for each feature
+        const el = document.createElement('div');
+        el.className = 'travel';
+
+        // make a marker for each feature and add it to the map
+        new mapboxgl.Marker(el)
+          .setLngLat(feature.geometry.coordinates)
+          .setPopup(
+            new mapboxgl.Popup({ offset: 15 }) // add popups
+              .setHTML(
+                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+              )
+          )
+          .addTo(map);
+      }
+    </script>
+  </body>
+</html>
