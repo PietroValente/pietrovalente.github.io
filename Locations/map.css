@@ -1,0 +1,51 @@
+body {
+        margin: 0;
+        padding: 0;
+      }
+#map {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+}
+.marker {
+background-size: cover;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+cursor: pointer;
+}
+.home {
+background-image: url('icons/home.png');
+}
+.home-actual {
+background-image: url('icons/home-actual.png');
+}
+.travel1 {
+background-image: url('icons/plane1.png');
+}
+.travel2 {
+background-image: url('icons/plane2.png');
+}
+.travel3 {
+background-image: url('icons/plane3.png');
+}
+.travel4 {
+background-image: url('icons/plane4.png');
+}
+.mapboxgl-popup {
+max-width: 200px;
+}
+.mapboxgl-popup-content {
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+color: #3A486D;
+border-radius: 30px;
+}
+.mapboxgl-popup-close-button {
+position: absolute;
+bottom: 0;
+height: 130%;
+width: 100%;
+opacity: 0;
+}
