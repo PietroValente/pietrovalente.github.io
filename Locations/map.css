@@ -33,6 +33,18 @@ background-image: url('icons/plane3.png');
 .travel4 {
 background-image: url('icons/plane4.png');
 }
+.travel1o {
+background-image: url('icons/plane1-o.png');
+}
+.travel2o {
+background-image: url('icons/plane2-o.png');
+}
+.travel3o {
+background-image: url('icons/plane3-o.png');
+}
+.travel4o {
+background-image: url('icons/plane4-o.png');
+}
 .mapboxgl-popup {
 max-width: 200px;
 }
