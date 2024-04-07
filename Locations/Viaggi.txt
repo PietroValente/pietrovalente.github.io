@@ -48,5 +48,6 @@ Palaiokastritsa, Greece Aug 2019 19.712005 39.674450
 Amsterdam, Netherlands Oct 2022 4.895168 52.370216
 
 Peniche, Portugal Feb 2024 -9.387622 39.360329
+Coimbra, Portugal Mar 2024 -8.410257 40.203314
 
 https://www.gps-latitude-longitude.com/
