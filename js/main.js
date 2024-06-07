@@ -50,7 +50,7 @@
     if ($('.typed-text-output').length == 1) {
         var typed_strings = $('.typed-text').text();
         var typed = new Typed('.typed-text-output', {
-            strings: ['Grew up on pizza, code and travel'],
+            strings: ['Grew up on pizza, code and travels'],
             typeSpeed: 30,
             backSpeed: 20,
             smartBackspace: false,
