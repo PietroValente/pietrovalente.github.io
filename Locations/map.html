@@ -1,745 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Pietro Valente | Locations</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="../img/icon.png" type="image/icon type">
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-    />
-    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-    <link
-      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <link href="map.css" rel="stylesheet">
-  </head>
-  <body>
-    <div id="map"></div>
 
-    <script>
-      mapboxgl.accessToken = 'pk.eyJ1Ijoic29vb3R5IiwiYSI6ImNscDA4ZTgwMjA0emEycHF1cWFwZW90cDkifQ.XOnXDndoGYR3qCcTmA23EA';
-      //mapboxgl.accessToken = 'pk.eyJ1Ijoic29vb3R5IiwiYSI6ImNsazZybjNnNTAyZ2UzcXFxbm56cTZxdjMifQ.EAqpJO5x09WfftZm601eag';
+<head>
+  <meta charset="utf-8" />
+  <title>Pietro Valente | Locations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../img/icon.png" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet" />
+  <link href="map.css" rel="stylesheet">
+</head>
 
-      const home = {
-        'type': 'Homes',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [10.211802, 45.541553]
-            },
-            'properties': {
-              'title': 'Childhood',
-              'description': 'Brescia, Italy'
-            }
+<body>
+  <div id="map"></div>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic29vb3R5IiwiYSI6ImNscDA4ZTgwMjA0emEycHF1cWFwZW90cDkifQ.XOnXDndoGYR3qCcTmA23EA';
+    //mapboxgl.accessToken = 'pk.eyJ1Ijoic29vb3R5IiwiYSI6ImNsazZybjNnNTAyZ2UzcXFxbm56cTZxdjMifQ.EAqpJO5x09WfftZm601eag';
+
+    const home = {
+      'type': 'Homes',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [10.211802, 45.541553]
           },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [11.876761, 45.406435]
-            },
-            'properties': {
-              'title': 'Bachelor\'s degree',
-              'description': 'Padua, Italy'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [9.2, 45.466667]
-            },
-            'properties': {
-              'title': 'Master\'s degree',
-              'description': 'Milan, Italy'
-            }
+          'properties': {
+            'title': 'Childhood',
+            'description': 'Brescia, Italy'
           }
-        ]
-      };
-
-      const homeactual = {
-        'type': 'HomeActual',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-9.1393366, 38.7222524]
-            },
-            'properties': {
-              'title': 'From 2024',
-              'description': 'Lisbon, Portugal'
-            }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [11.876761, 45.406435]
+          },
+          'properties': {
+            'title': 'Bachelor\'s degree',
+            'description': 'Padua, Italy'
           }
-        ]
-      };
-
-      const travel1 = {
-        'type': 'Travel1',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-71.058880, 42.360082]
-            },
-            'properties': {
-              'title': 'Jul 2012',
-              'description': 'Boston, USA'
-            }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [9.2, 45.466667]
           },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-7.987618, 31.630170]
-            },
-            'properties': {
-              'title': 'Dec 2011',
-              'description': 'Marrakesh, Morocco'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-21.933333, 64.133333]
-            },
-            'properties': {
-              'title': 'Aug 2012',
-              'description': 'Reykjavik, Iceland'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-43.172897, -22.906847]
-            },
-            'properties': {
-              'title': 'Nov 2016',
-              'description': 'Rio de Janeiro, Brazil'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-56.666668, -16.350000]
-            },
-            'properties': {
-              'title': 'Aug 2014',
-              'description': 'Pantanal'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-2.934985, 43.263013]
-            },
-            'properties': {
-              'title': 'Jul 2016',
-              'description': 'Bilbao, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-3.599932, 37.173563]
-            },
-            'properties': {
-              'title': 'Oct 2023',
-              'description': 'Granada, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [47.525096, -18.909750]
-            },
-            'properties': {
-              'title': 'Jul 2016',
-              'description': 'Antananarivo, Madagascar'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [19.712005, 39.674450]
-            },
-            'properties': {
-              'title': 'Aug 2019',
-              'description': 'Palaiokastritsa, Greece'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [11.575483, 48.135087]
-            },
-            'properties': {
-              'title': 'Jan 2010',
-              'description': 'Munich, Germany'
-            }
+          'properties': {
+            'title': 'Master\'s degree',
+            'description': 'Milan, Italy'
           }
-        ]
-      };
+        }
+      ]
+    };
 
-      const travel2 = {
-        'type': 'Travel2',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-87.629798, 41.878114]
-            },
-            'properties': {
-              'title': 'Jul 2012',
-              'description': 'Chicago, USA'
-            }
+    const homeactual = {
+      'type': 'HomeActual',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-9.1393366, 38.7222524]
           },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-5.009680, 34.027531]
-            },
-            'properties': {
-              'title': 'Dec 2011',
-              'description': 'Fes, Morocco'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [34.252625, 27.874742]
-            },
-            'properties': {
-              'title': 'Dec 2012',
-              'description': 'Sharm El-Sheikh, Egypt'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-6.260310, 53.349805]
-            },
-            'properties': {
-              'title': 'Jul 2016',
-              'description': 'Dublino, Ireland'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-60.021731, -3.119028]
-            },
-            'properties': {
-              'title': 'Aug 2014',
-              'description': 'Manaus, Brazil'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-44.228944, -23.152084]
-            },
-            'properties': {
-              'title': 'Nov 2016',
-              'description': 'Ilha Grande, Brazil'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-4.421922, 36.721177]
-            },
-            'properties': {
-              'title': 'Oct 2023',
-              'description': 'Málaga, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [1.807101, 41.234295]
-            },
-            'properties': {
-              'title': 'Jul 2021',
-              'description': 'Sitges, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [43.646890, -23.658237]
-            },
-            'properties': {
-              'title': 'Jul 2016',
-              'description': 'Anakao, Madagascar'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [4.895168, 52.370216]
-            },
-            'properties': {
-              'title': 'Oct 2022',
-              'description': 'Amsterdam, Netherlands'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-0.878971, 41.653935]
-            },
-            'properties': {
-              'title': 'Dec 2023',
-              'description': 'Zaragoza, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [5.448721, 43.528918]
-            },
-            'properties': {
-              'title': 'June 2014',
-              'description': 'Aix-en-Provence, France'
-            }
+          'properties': {
+            'title': 'From 2024',
+            'description': 'Lisbon, Portugal'
           }
-        ]
-      };
+        }
+      ]
+    };
 
-      const travel3 = {
-        'type': 'Travel3',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-74.005941, 40.712784]
-            },
-            'properties': {
-              'title': 'Jan 2010',
-              'description': 'New York, USA'
-            }
+    const travel1 = {
+      'type': 'Travel1',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-71.058880, 42.360082]
           },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-79.037739, 43.096214]
-            },
-            'properties': {
-              'title': 'Jul 2012',
-              'description': 'Niagara Falls, Canada'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [28.978359, 41.008238]
-            },
-            'properties': {
-              'title': 'Jul 2016',
-              'description': 'Istanbul, Turkey'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-5.930120, 54.597285]
-            },
-            'properties': {
-              'title': 'Jul 2014',
-              'description': 'Belfast, UK'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-44.298895, -2.530672]
-            },
-            'properties': {
-              'title': 'Aug 2014',
-              'description': 'Sao Luís, Brazil'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-1.981231, 43.318334]
-            },
-            'properties': {
-              'title': 'Jul 2016',
-              'description': 'San Sebastián, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [3.147202, 41.970846]
-            },
-            'properties': {
-              'title': 'Jul 2022',
-              'description': 'Pals, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [20.532761, 38.263355]
-            },
-            'properties': {
-              'title': 'Sep 2018',
-              'description': 'Cephalonia, Greece'
-            }
+          'properties': {
+            'title': 'Jul 2012',
+            'description': 'Boston, USA'
           }
-        ]
-      };
-
-      const travel4 = {
-        'type': 'Travel4',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-79.383184, 43.653226]
-            },
-            'properties': {
-              'title': 'Jul 2012',
-              'description': 'Toronto, Canada'
-            }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-7.987618, 31.630170]
           },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-6.312581, 29.819707]
-            },
-            'properties': {
-              'title': 'Dec 2011',
-              'description': 'Erg Chigaga, Morocco'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-0.127758, 51.507351]
-            },
-            'properties': {
-              'title': 'Sep 2019',
-              'description': 'London, UK'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-41.883345, -22.755328]
-            },
-            'properties': {
-              'title': 'Nov 2016',
-              'description': 'Buzios, Brazil'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-47.882581, -15.793960]
-            },
-            'properties': {
-              'title': 'Aug 2014',
-              'description': 'Brasília, Brazil'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [2.170047, 41.386925]
-            },
-            'properties': {
-              'title': 'Dec 2023',
-              'description': 'Barcelona, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-0.376288, 39.469907]
-            },
-            'properties': {
-              'title': 'Jul 2018',
-              'description': 'Valencia, Spain'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [20.640730, 38.706646]
-            },
-            'properties': {
-              'title': 'Sep 2018',
-              'description': 'Lefkada, Greece'
-            }
-          },
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [5.369780, 43.296482]
-            },
-            'properties': {
-              'title': 'Dec 2023',
-              'description': 'Marseille, France'
-            }
+          'properties': {
+            'title': 'Dec 2011',
+            'description': 'Marrakesh, Morocco'
           }
-        ]
-      };
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-21.933333, 64.133333]
+          },
+          'properties': {
+            'title': 'Aug 2012',
+            'description': 'Reykjavik, Iceland'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-43.172897, -22.906847]
+          },
+          'properties': {
+            'title': 'Nov 2016',
+            'description': 'Rio de Janeiro, Brazil'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-56.666668, -16.350000]
+          },
+          'properties': {
+            'title': 'Aug 2014',
+            'description': 'Pantanal'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-2.934985, 43.263013]
+          },
+          'properties': {
+            'title': 'Jul 2016',
+            'description': 'Bilbao, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-3.599932, 37.173563]
+          },
+          'properties': {
+            'title': 'Oct 2023',
+            'description': 'Granada, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [47.525096, -18.909750]
+          },
+          'properties': {
+            'title': 'Jul 2016',
+            'description': 'Antananarivo, Madagascar'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [19.712005, 39.674450]
+          },
+          'properties': {
+            'title': 'Aug 2019',
+            'description': 'Palaiokastritsa, Greece'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [11.575483, 48.135087]
+          },
+          'properties': {
+            'title': 'Jan 2010',
+            'description': 'Munich, Germany'
+          }
+        }
+      ]
+    };
 
-      const travel1o = {
-        'type': 'Travel1o',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-9.387622, 39.360329]
-            },
-            'properties': {
-              'title': 'Feb 2024',
-              'description': 'Peniche, Portugal'
-            }
-          }]
-      };
+    const travel2 = {
+      'type': 'Travel2',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-87.629798, 41.878114]
+          },
+          'properties': {
+            'title': 'Jul 2012',
+            'description': 'Chicago, USA'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-5.009680, 34.027531]
+          },
+          'properties': {
+            'title': 'Dec 2011',
+            'description': 'Fes, Morocco'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [34.252625, 27.874742]
+          },
+          'properties': {
+            'title': 'Dec 2012',
+            'description': 'Sharm El-Sheikh, Egypt'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-6.260310, 53.349805]
+          },
+          'properties': {
+            'title': 'Jul 2016',
+            'description': 'Dublino, Ireland'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-60.021731, -3.119028]
+          },
+          'properties': {
+            'title': 'Aug 2014',
+            'description': 'Manaus, Brazil'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-44.228944, -23.152084]
+          },
+          'properties': {
+            'title': 'Nov 2016',
+            'description': 'Ilha Grande, Brazil'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-4.421922, 36.721177]
+          },
+          'properties': {
+            'title': 'Oct 2023',
+            'description': 'Málaga, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [1.807101, 41.234295]
+          },
+          'properties': {
+            'title': 'Jul 2021',
+            'description': 'Sitges, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [43.646890, -23.658237]
+          },
+          'properties': {
+            'title': 'Jul 2016',
+            'description': 'Anakao, Madagascar'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [4.895168, 52.370216]
+          },
+          'properties': {
+            'title': 'Oct 2022',
+            'description': 'Amsterdam, Netherlands'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-0.878971, 41.653935]
+          },
+          'properties': {
+            'title': 'Dec 2023',
+            'description': 'Zaragoza, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [5.448721, 43.528918]
+          },
+          'properties': {
+            'title': 'June 2014',
+            'description': 'Aix-en-Provence, France'
+          }
+        }
+      ]
+    };
 
-      const travel2o = {
-        'type': 'Travel2o',
-        'features': [
-          {
-            'type': 'Feature',
-            'geometry': {
-              'type': 'Point',
-              'coordinates': [-8.410257, 40.203314]
-            },
-            'properties': {
-              'title': 'Mar 2024',
-              'description': 'Coimbra, Portugal'
-            }
-          }]
-      };
+    const travel3 = {
+      'type': 'Travel3',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-74.005941, 40.712784]
+          },
+          'properties': {
+            'title': 'Jan 2010',
+            'description': 'New York, USA'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-79.037739, 43.096214]
+          },
+          'properties': {
+            'title': 'Jul 2012',
+            'description': 'Niagara Falls, Canada'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [28.978359, 41.008238]
+          },
+          'properties': {
+            'title': 'Jul 2016',
+            'description': 'Istanbul, Turkey'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-5.930120, 54.597285]
+          },
+          'properties': {
+            'title': 'Jul 2014',
+            'description': 'Belfast, UK'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-44.298895, -2.530672]
+          },
+          'properties': {
+            'title': 'Aug 2014',
+            'description': 'Sao Luís, Brazil'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-1.981231, 43.318334]
+          },
+          'properties': {
+            'title': 'Jul 2016',
+            'description': 'San Sebastián, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [3.147202, 41.970846]
+          },
+          'properties': {
+            'title': 'Jul 2022',
+            'description': 'Pals, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [20.532761, 38.263355]
+          },
+          'properties': {
+            'title': 'Sep 2018',
+            'description': 'Cephalonia, Greece'
+          }
+        }
+      ]
+    };
 
-      const travel3o = {
-        
-      };
+    const travel4 = {
+      'type': 'Travel4',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-79.383184, 43.653226]
+          },
+          'properties': {
+            'title': 'Jul 2012',
+            'description': 'Toronto, Canada'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-6.312581, 29.819707]
+          },
+          'properties': {
+            'title': 'Dec 2011',
+            'description': 'Erg Chigaga, Morocco'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-0.127758, 51.507351]
+          },
+          'properties': {
+            'title': 'Sep 2019',
+            'description': 'London, UK'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-41.883345, -22.755328]
+          },
+          'properties': {
+            'title': 'Nov 2016',
+            'description': 'Buzios, Brazil'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-47.882581, -15.793960]
+          },
+          'properties': {
+            'title': 'Aug 2014',
+            'description': 'Brasília, Brazil'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [2.170047, 41.386925]
+          },
+          'properties': {
+            'title': 'Dec 2023',
+            'description': 'Barcelona, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-0.376288, 39.469907]
+          },
+          'properties': {
+            'title': 'Jul 2018',
+            'description': 'Valencia, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [20.640730, 38.706646]
+          },
+          'properties': {
+            'title': 'Sep 2018',
+            'description': 'Lefkada, Greece'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [5.369780, 43.296482]
+          },
+          'properties': {
+            'title': 'Dec 2023',
+            'description': 'Marseille, France'
+          }
+        }
+      ]
+    };
 
-      const travel4o = {
+    const travel1o = {
+      'type': 'Travel1o',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-9.387622, 39.360329]
+          },
+          'properties': {
+            'title': 'Feb 2024',
+            'description': 'Peniche, Portugal'
+          }
+        }]
+    };
 
-      };
+    const travel2o = {
+      'type': 'Travel2o',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-8.410257, 40.203314]
+          },
+          'properties': {
+            'title': 'Mar 2024',
+            'description': 'Coimbra, Portugal'
+          }
+        }]
+    };
 
-      const map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/light-v11',
-        center: [3.8, 41],
-        zoom: 3
-      });
+    const travel3o = {
 
-      // add markers to map
-      for (const feature of home.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker home';
+    };
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of homeactual.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker home-actual';
+    const travel4o = {
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of travel1.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel1';
+    };
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of travel2.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel2';
+    const start = {
+      center: [80, 36],
+      zoom: 1
+    };
+    const end = {
+      center: [3.8, 41],
+      zoom: 3
+    };
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of travel3.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel3';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v11',
+      ...start
+    });
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of travel4.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel4';
+    map.flyTo({
+            ...end, // Fly to the selected target
+            duration: 9000, // Animate over 12 seconds
+            essential: true // This animation is considered essential with
+            //respect to prefers-reduced-motion
+        });
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of travel1o.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel1o';
+    // add markers to map
+    for (const feature of home.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker home';
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of travel2o.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel2o';
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of homeactual.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker home-actual';
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      /*for (const feature of travel3o.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel3o';
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of travel1.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel1';
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }
-      for (const feature of travel4o.features) {
-        // create a HTML element for each feature
-        const el = document.createElement('div');
-        el.className = 'marker travel4o';
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of travel2.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel2';
 
-        // make a marker for each feature and add it to the map
-        new mapboxgl.Marker(el)
-          .setLngLat(feature.geometry.coordinates)
-          .setPopup(
-            new mapboxgl.Popup({ offset: 15 }) // add popups
-              .setHTML(
-                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-              )
-          )
-          .addTo(map);
-      }*/
-    </script>
-  </body>
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of travel3.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel3';
+
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of travel4.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel4';
+
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of travel1o.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel1o';
+
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of travel2o.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel2o';
+
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    /*for (const feature of travel3o.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel3o';
+
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }
+    for (const feature of travel4o.features) {
+      // create a HTML element for each feature
+      const el = document.createElement('div');
+      el.className = 'marker travel4o';
+
+      // make a marker for each feature and add it to the map
+      new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+          new mapboxgl.Popup({ offset: 15 }) // add popups
+            .setHTML(
+              `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+            )
+        )
+        .addTo(map);
+    }*/
+  </script>
+</body>
+
 </html>
