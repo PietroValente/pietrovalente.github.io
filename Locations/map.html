@@ -538,10 +538,11 @@
             'coordinates': [-9.387622, 39.360329]
           },
           'properties': {
-            'title': 'Feb 2024',
+            'title': 'June 2024',
             'description': 'Peniche, Portugal'
           }
-        }]
+        }
+      ]
     };
 
     const travel2o = {
@@ -557,15 +558,64 @@
             'title': 'Mar 2024',
             'description': 'Coimbra, Portugal'
           }
-        }]
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-9.499521, 38.780888]
+          },
+          'properties': {
+            'title': 'Jan 2024',
+            'description': 'Cabo da Roca, Portugal'
+          }
+        }
+      ]
     };
 
     const travel3o = {
-
+      'type': 'Travel3o',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-8.117312, 37.075199]
+          },
+          'properties': {
+            'title': 'Sep 2024',
+            'description': 'Vilamoura, Portugal'
+          }
+        }
+      ]
     };
 
     const travel4o = {
-
+      'type': 'Travel4o',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-8.610101, 41.142231]
+          },
+          'properties': {
+            'title': 'Aug 2024',
+            'description': 'Porto, Portugal'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-4.886384, 36.508763]
+          },
+          'properties': {
+            'title': 'June 2024',
+            'description': 'Marbella, Spain'
+          }
+        },
+      ]
     };
 
     const start = {
@@ -573,8 +623,8 @@
       zoom: 1
     };
     const end = {
-      center: [3.8, 41],
-      zoom: 3
+      center: [3.8, 39],
+      zoom: 4
     };
 
     const map = new mapboxgl.Map({
@@ -585,7 +635,7 @@
 
     map.flyTo({
             ...end, // Fly to the selected target
-            duration: 9000, // Animate over 12 seconds
+            duration: 12000, // Animate over 12 seconds
             essential: true // This animation is considered essential with
             //respect to prefers-reduced-motion
         });
@@ -719,7 +769,7 @@
         )
         .addTo(map);
     }
-    /*for (const feature of travel3o.features) {
+    for (const feature of travel3o.features) {
       // create a HTML element for each feature
       const el = document.createElement('div');
       el.className = 'marker travel3o';
@@ -750,7 +800,7 @@
             )
         )
         .addTo(map);
-    }*/
+    }
   </script>
 </body>
 
