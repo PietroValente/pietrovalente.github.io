@@ -1,55 +1,55 @@
 New York, USA Jan 2010 -74.005941 40.712784
-Chicago, USA Jul 2012 -87.629798 41.878114
-Toronto, Canada Jul 2012 -79.383184 43.653226
-Niagara Falls, Canada Jul 2012 -79.037739 43.096214
-Boston, USA Jul 2012 -71.058880 42.360082
+Munich, Germany Jan 2010 11.575483 48.135087
 
 Marrakesh, Morocco Dec 2011 -7.987618 31.630170
 Fes, Morocco Dec 2011 -5.009680 34.027531
 Erg Chigaga, Morocco Dec 2011 -6.312581 29.819707
-Sharm El-Sheikh, Egypt Dec 2012 34.252625 27.874742
-Istanbul, Turkey Jul 2016 28.978359 41.008238
 
+Chicago, USA Jul 2012 -87.629798 41.878114
+Toronto, Canada Jul 2012 -79.383184 43.653226
+Niagara Falls, Canada Jul 2012 -79.037739 43.096214
+Boston, USA Jul 2012 -71.058880 42.360082
 Reykjavik, Iceland Aug 2012 -21.933333 64.133333
-Dublino, Ireland Jul 2016 -6.260310 53.349805
-Belfast, UK Jul 2014 -5.930120 54.597285
-London, UK Sep 2019 -0.127758 51.507351
+Sharm El-Sheikh, Egypt Dec 2012 34.252625 27.874742
 
-Rio de Janeiro, Brazil Nov 2016 -43.172897 -22.906847
+Aix-en-Provence, France June 2014 5.448721 43.528918
+Belfast, UK Jul 2014 -5.930120 54.597285
 Manaus, Brazil Aug 2014 -60.021731 -3.119028
 Sao Luís, Brazil Aug 2014 -44.298895 -2.530672
-Buzios, Brazil Nov 2016 -41.883345 -22.755328
-Ilha Grande, Brazil Nov 2016 -44.228944 -23.152084
 Pantanal Aug 2014 -56.666668 -16.350000
 Brasília, Brazil Aug 2014 -47.882581 -15.793960
 
+Dublino, Ireland Jul 2016 -6.260310 53.349805
 Bilbao, Spain Jul 2016 -2.934985 43.263013
 San Sebastián, Spain Jul 2016 -1.981231 43.318334
-Barcelona, Spain Dec 2023 2.170047 41.386925
-Málaga, Spain Oct 2023 -4.421922 36.721177
-Granada, Spain Oct 2023 -3.599932 37.173563
-Sitges, Spain Jul 2021 1.807101 41.234295
-Pals, Spain Jul 2022 3.147202 41.970846
-Valencia, Spain Jul 2018 -0.376288 39.469907
-Zaragoza, Spain Dec 2023 -0.878971 41.653935
-
-Aix-en-Provence, France June 2014 5.448721 43.528918
-Marseille, France Dec 2023 5.369780 43.296482
-
-Munich, Germany Jan 2010 11.575483 48.135087
-
 Antananarivo, Madagascar Jul 2016 47.525096 -18.909750
 Anakao, Madagascar Jul 2016 43.646890 -23.658237
+Istanbul, Turkey Jul 2016 28.978359 41.008238
+Rio de Janeiro, Brazil Nov 2016 -43.172897 -22.906847
+Buzios, Brazil Nov 2016 -41.883345 -22.755328
+Ilha Grande, Brazil Nov 2016 -44.228944 -23.152084
 
+Valencia, Spain Jul 2018 -0.376288 39.469907
 Cephalonia, Greece Sep 2018 20.532761 38.263355
 Lefkada, Greece Sep 2018 20.640730 38.706646
-Palaiokastritsa, Greece Aug 2019 19.712005 39.674450
 
+Palaiokastritsa, Greece Aug 2019 19.712005 39.674450
+London, UK Sep 2019 -0.127758 51.507351
+
+Sitges, Spain Jul 2021 1.807101 41.234295
+
+Pals, Spain Jul 2022 3.147202 41.970846
 Amsterdam, Netherlands Oct 2022 4.895168 52.370216
 
-Peniche & Berlengas, Portugal June 2024 -9.387622 39.360329
+Málaga, Spain Oct 2023 -4.421922 36.721177
+Granada, Spain Oct 2023 -3.599932 37.173563
+Marseille, France Dec 2023 5.369780 43.296482
+Barcelona, Spain Dec 2023 2.170047 41.386925
+Zaragoza, Spain Dec 2023 -0.878971 41.653935
+
 Cabo da Roca, Portugal Jan 2024 -9.499521 38.780888
 Coimbra, Portugal Mar 2024 -8.410257 40.203314
+Peniche & Berlengas, Portugal June 2024 -9.387622 39.360329
 Marbella, Spain June 2024 -4.886384 36.508763
 Porto, Portugal Aug 2024 -8.610101 41.142231
 Vilamoura, Portugal Sep 2024 -8.117312 37.075199
