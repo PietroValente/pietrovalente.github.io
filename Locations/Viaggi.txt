@@ -52,6 +52,5 @@ Coimbra, Portugal Mar 2024 -8.410257 40.203314
 Peniche & Berlengas, Portugal June 2024 -9.387622 39.360329
 Marbella, Spain June 2024 -4.886384 36.508763
 Porto, Portugal Aug 2024 -8.610101 41.142231
-Vilamoura, Portugal Sep 2024 -8.117312 37.075199
 
 https://www.gps-latitude-longitude.com/
