@@ -19,14 +19,15 @@
 		padding: 10px;
 		border-radius: 25px 25px 0px 0px;
 		padding-top: 20px;
+		opacity: 0.9;
 	}
 	.skill-card-body {
 		background-color: #fff;
 		padding: 15px;
 		border-radius: 0px 0px 25px 25px;
-		padding-top: 30px;
-		margin-top: -25px;
+		padding-top: 5px;
 		height: 220px;
+		opacity: 0.9;
 	}
 
 	/* Icons descriptions for timelines */
@@ -102,6 +103,7 @@
 		padding: 15px;
 		border-radius: 0px 0px 25px 25px;
 		padding-top: 30px;
+		padding-bottom: 30px;
 		margin-top: -25px;
 	}
 
@@ -160,6 +162,50 @@
 }
 
 /* GLOBAL corrections */
+
+/* Circles section SoftSkills */
+.circle-container {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+  }
+  
+  .circle {
+	width: 350px;
+	height: 350px;
+	background-color: white;
+	color: balck;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	text-align: center;
+	border: 2px solid #3A486D;
+	align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+
+  @media (orientation: portrait) {
+    .circle-container {
+        flex-direction: column; /* Allinea i cerchi verticalmente */
+        align-items: center; /* Allinea i cerchi al centro orizzontalmente */
+    }
+
+    .circle {
+        margin-bottom: 40px; /* Spazio tra i cerchi */
+    }
+
+    .circle:last-child {
+        margin-bottom: 0; /* Rimuove lo spazio dopo l'ultimo cerchio */
+    }
+
+	.circle:first-child {
+        margin-top: 40px; /* Rimuove lo spazio dopo l'ultimo cerchio */
+    }
+}
 
 /*Last card adjustments (both landscape and portrait)*/
 .finalelement-card {
@@ -335,7 +381,7 @@
 
 /* Animation Projects and Skills cards*/
 .mini {
-	min-height: 215px;
+	min-height: 225px;
 	overflow: hidden;
 	position: relative;
 }
@@ -395,19 +441,6 @@
 	line-height: 26px;
 	font-weight: 400;
 	font-size: 15px;
-}
-
-.mini .mini-content .mini-box {
-	display: block;
-	position: relative;
-	-webkit-transition: all 0.3s ease 0s;
-	-moz-transition: all 0.3s ease 0s;
-	-o-transition: all 0.3s ease 0s;
-	transition: all 0.3s ease 0s;
-}
-
-.mini .mini-content .mini-box:hover {
-	margin-top: -10px;
 }
 
 .mini .mini-content .mini-box:before {
