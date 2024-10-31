@@ -52,5 +52,8 @@ Coimbra, Portugal Mar 2024 -8.410257 40.203314
 Peniche & Berlengas, Portugal June 2024 -9.387622 39.360329
 Marbella, Spain June 2024 -4.886384 36.508763
 Porto, Portugal Aug 2024 -8.610101 41.142231
+San Francisco, USA Sep 2024 -122.419416 37.774929
+Los Angeles, USA Sep 2024 -118.243685 34.052234
+Joshua Tree Park, USA Sep 2024 -115.900992 33.873415
 
 https://www.gps-latitude-longitude.com/

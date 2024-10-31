@@ -541,6 +541,17 @@
             'title': 'June 2024',
             'description': 'Peniche, Portugal'
           }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-122.419416, 37.774929]
+          },
+          'properties': {
+            'title': 'Sep 2024',
+            'description': 'San Francisco, USA'
+          }
         }
       ]
     };
@@ -558,12 +569,36 @@
             'title': 'Mar 2024',
             'description': 'Coimbra, Portugal'
           }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-115.900992, 33.873415]
+          },
+          'properties': {
+            'title': 'Sep 2024',
+            'description': 'Joshua Tree Park, USA'
+          }
         }
       ]
     };
 
     const travel3o = {
-      
+      'type': 'Travel3o',
+      'features': [
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-118.243685, 34.052234]
+          },
+          'properties': {
+            'title': 'Sep 2024',
+            'description': 'Los Angeles, USA'
+          }
+        }
+      ]
     };
 
     const travel4o = {
@@ -745,7 +780,7 @@
         )
         .addTo(map);
     }
-    /*for (const feature of travel3o.features) {
+    for (const feature of travel3o.features) {
       // create a HTML element for each feature
       const el = document.createElement('div');
       el.className = 'marker travel3o';
@@ -760,7 +795,7 @@
             )
         )
         .addTo(map);
-    }*/
+    }
     for (const feature of travel4o.features) {
       // create a HTML element for each feature
       const el = document.createElement('div');
