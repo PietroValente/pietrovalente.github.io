@@ -142,7 +142,14 @@
     });
 
     //Start on right section of Certifications
-    document.getElementById('startPortfolio').click();
+    window.onload = function() {
+        // Esegui il filtro predefinito (ad esempio, il primo filtro)
+        var defaultFilter = $('#portfolio-flters li').first().data('filter');
+        portfolioIsotope.isotope({ filter: defaultFilter });
+    
+        // Facoltativo: Imposta il primo elemento come attivo
+        $('#portfolio-flters li').first().addClass('active');
+    };
     
 })(jQuery);
 
