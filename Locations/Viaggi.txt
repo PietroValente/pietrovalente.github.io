@@ -74,4 +74,7 @@ Tangier, Morocco Nov 2024 -5.804311 35.772145
 Aveiro, Portugal Nov 2024 -8.653754 40.640506
 Coimbra, Portugal Nov 2024 -8.410257 40.203314
 
+2025
+Barcelona, Spain Feb 2025 2.170047 41.386925
+
 https://www.gps-latitude-longitude.com/
