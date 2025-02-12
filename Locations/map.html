@@ -584,17 +584,6 @@
           'type': 'Feature',
           'geometry': {
             'type': 'Point',
-            'coordinates': [2.170047, 41.386925]
-          },
-          'properties': {
-            'title': 'Dec 2023',
-            'description': 'Barcelona, Spain'
-          }
-        },
-        {
-          'type': 'Feature',
-          'geometry': {
-            'type': 'Point',
             'coordinates': [-0.376288, 39.469907]
           },
           'properties': {
@@ -700,22 +689,22 @@
       ]
     };*/
 
-    /*const travel4o = {
+    const travel4o = {
       'type': 'Travel4o',
       'features': [
         {
           'type': 'Feature',
           'geometry': {
             'type': 'Point',
-            'coordinates': [-8.610101, 41.142231]
+            'coordinates': [2.170047, 41.386925]
           },
           'properties': {
-            'title': 'Aug 2024',
-            'description': 'Porto, Portugal'
+            'title': 'Feb 2025',
+            'description': 'Barcelona, Spain'
           }
         }
       ]
-    };*/
+    };
 
     const start = {
       center: [80, 36],
@@ -884,7 +873,7 @@
         )
         .addTo(map);
     }*/
-    /*for (const feature of travel4o.features) {
+    for (const feature of travel4o.features) {
       // create a HTML element for each feature
       const el = document.createElement('div');
       el.className = 'marker travel4o';
@@ -899,7 +888,7 @@
             )
         )
         .addTo(map);
-    }*/
+    }
   </script>
 </body>
 
