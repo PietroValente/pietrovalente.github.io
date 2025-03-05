@@ -76,5 +76,8 @@ Coimbra, Portugal Nov 2024 -8.410257 40.203314
 
 2025
 Barcelona, Spain Feb 2025 2.170047 41.386925
+Cordova, Spain Mar 2025 -4.776414 37.884158
+Sevilla, Spain Mar 2025 -5.995341 37.388687
+
 
 https://www.gps-latitude-longitude.com/
