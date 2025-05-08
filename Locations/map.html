@@ -638,22 +638,22 @@
       ]
     };
 
-    /*const travel1o = {
+    const travel1o = {
       'type': 'Travel1o',
       'features': [
         {
           'type': 'Feature',
           'geometry': {
             'type': 'Point',
-            'coordinates': [-9.387622, 39.360329]
+            'coordinates': [2.348258, 48.854824]
           },
           'properties': {
-            'title': 'June 2024',
-            'description': 'Peniche, Portugal'
+            'title': 'Mar 2025',
+            'description': 'Paris, France'
           }
         }
       ]
-    };*/
+    };
 
     const travel2o = {
       'type': 'Travel2o',
@@ -701,6 +701,17 @@
           'properties': {
             'title': 'Feb 2025',
             'description': 'Barcelona, Spain'
+          }
+        },
+        {
+          'type': 'Feature',
+          'geometry': {
+            'type': 'Point',
+            'coordinates': [-7.907834, 38.571086]
+          },
+          'properties': {
+            'title': 'May 2025',
+            'description': 'Evora, Portugal'
           }
         }
       ]
@@ -825,7 +836,7 @@
         )
         .addTo(map);
     }
-    /*for (const feature of travel1o.features) {
+    for (const feature of travel1o.features) {
       // create a HTML element for each feature
       const el = document.createElement('div');
       el.className = 'marker travel1o';
@@ -840,7 +851,7 @@
             )
         )
         .addTo(map);
-    }*/
+    }
     for (const feature of travel2o.features) {
       // create a HTML element for each feature
       const el = document.createElement('div');
